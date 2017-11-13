@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0mx-d0-413">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="WoK-yh-EkT">
+            <objects>
+                <viewController id="ERm-pF-Nns" customClass="ViewController" customModule="TabViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wdu-WX-xgu"/>
+                        <viewControllerLayoutGuide type="bottom" id="xEF-wx-zOy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="awq-zp-aZ6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJs-DJ-a2k">
+                                <rect key="frame" x="213" y="71" width="174" height="30"/>
+                                <state key="normal" title="Add Notification">
+                                    <color key="titleColor" red="0.98634541796790931" green="1" blue="0.075920256533267061" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNotificationTapped:" destination="ERm-pF-Nns" eventType="touchUpInside" id="rdR-oY-3jE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MJs-DJ-a2k" firstAttribute="leading" secondItem="awq-zp-aZ6" secondAttribute="leadingMargin" constant="193" id="1xZ-G8-khH"/>
+                            <constraint firstItem="MJs-DJ-a2k" firstAttribute="top" secondItem="wdu-WX-xgu" secondAttribute="bottom" constant="51" id="Hk0-r4-cZO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MJs-DJ-a2k" secondAttribute="trailing" constant="193" id="Yit-Cm-NOC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="6YQ-yy-UoH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBx-iF-oKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="337"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rxN-Ci-PiY">
+            <objects>
+                <viewController id="g4Z-a6-meU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kOM-1N-LGF"/>
+                        <viewControllerLayoutGuide type="bottom" id="x4P-NS-z65"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="csI-JL-jq5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.031354695959999998" green="1" blue="0.75834517379999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" badgeValue="1" systemItem="favorites" id="MRk-dk-IhB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lyp-Fg-oI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="-324"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yNw-uz-kxy">
+            <objects>
+                <tabBarController id="0mx-d0-413" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W4T-Y5-Ouw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="g4Z-a6-meU" kind="relationship" relationship="viewControllers" id="mhT-bI-gub"/>
+                        <segue destination="ERm-pF-Nns" kind="relationship" relationship="viewControllers" id="7rs-IY-e5u"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AhA-6I-ahT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-494" y="7"/>
+        </scene>
+    </scenes>
+</document>

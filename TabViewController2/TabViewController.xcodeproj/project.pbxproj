@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0684C1FD4C9CAF9CE48982AF /* Pods_TabViewControllerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D3B0A68D4CCA6BA55C0474 /* Pods_TabViewControllerTests.framework */; };
+		2A486DBC1D6FF6ED003676B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A486DBB1D6FF6ED003676B0 /* AppDelegate.swift */; };
+		2A486DBE1D6FF6ED003676B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A486DBD1D6FF6ED003676B0 /* ViewController.swift */; };
+		2A486DC11D6FF6ED003676B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A486DBF1D6FF6ED003676B0 /* Main.storyboard */; };
+		2A486DC31D6FF6ED003676B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A486DC21D6FF6ED003676B0 /* Assets.xcassets */; };
+		2A486DC61D6FF6ED003676B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A486DC41D6FF6ED003676B0 /* LaunchScreen.storyboard */; };
+		2A486DD11D6FF6ED003676B0 /* TabViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A486DD01D6FF6ED003676B0 /* TabViewControllerTests.swift */; };
+		2A486DDC1D6FF6ED003676B0 /* TabViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A486DDB1D6FF6ED003676B0 /* TabViewControllerUITests.swift */; };
+		450E9CFAD8130E5FE5C8D506 /* Pods_TabViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B47A452FED947E45BC4E778 /* Pods_TabViewController.framework */; };
+		BF42512A15EC7E3BB546A1D8 /* Pods_TabViewControllerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A46CB32110E02C10DC540C /* Pods_TabViewControllerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A486DCD1D6FF6ED003676B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A486DB01D6FF6ED003676B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A486DB71D6FF6ED003676B0;
+			remoteInfo = TabViewController;
+		};
+		2A486DD81D6FF6ED003676B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A486DB01D6FF6ED003676B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A486DB71D6FF6ED003676B0;
+			remoteInfo = TabViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043FFC184C781F9BC07EBE37 /* Pods-TabViewControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabViewControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabViewControllerTests/Pods-TabViewControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		12A46CB32110E02C10DC540C /* Pods_TabViewControllerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabViewControllerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A486DB81D6FF6ED003676B0 /* TabViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A486DBB1D6FF6ED003676B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A486DBD1D6FF6ED003676B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A486DC01D6FF6ED003676B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A486DC21D6FF6ED003676B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A486DC51D6FF6ED003676B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A486DC71D6FF6ED003676B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A486DCC1D6FF6ED003676B0 /* TabViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A486DD01D6FF6ED003676B0 /* TabViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewControllerTests.swift; sourceTree = "<group>"; };
+		2A486DD21D6FF6ED003676B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A486DD71D6FF6ED003676B0 /* TabViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A486DDB1D6FF6ED003676B0 /* TabViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewControllerUITests.swift; sourceTree = "<group>"; };
+		2A486DDD1D6FF6ED003676B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37C7E7C630DB1779EBB33FC4 /* Pods-TabViewControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabViewControllerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabViewControllerUITests/Pods-TabViewControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		63BBE2B7786B54ED8494C677 /* Pods-TabViewControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabViewControllerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabViewControllerUITests/Pods-TabViewControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AB119221C7837D680E516FB /* Pods-TabViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabViewController/Pods-TabViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		9B47A452FED947E45BC4E778 /* Pods_TabViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35024F1A484B35626D91740 /* Pods-TabViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabViewController/Pods-TabViewController.release.xcconfig"; sourceTree = "<group>"; };
+		C6D3B0A68D4CCA6BA55C0474 /* Pods_TabViewControllerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabViewControllerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CB770E37E70BC918ACFD98 /* Pods-TabViewControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabViewControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabViewControllerTests/Pods-TabViewControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A486DB51D6FF6ED003676B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450E9CFAD8130E5FE5C8D506 /* Pods_TabViewController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A486DC91D6FF6ED003676B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0684C1FD4C9CAF9CE48982AF /* Pods_TabViewControllerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A486DD41D6FF6ED003676B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF42512A15EC7E3BB546A1D8 /* Pods_TabViewControllerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A486DAF1D6FF6ED003676B0 = {
+			isa = PBXGroup;
+			children = (
+				2A486DBA1D6FF6ED003676B0 /* TabViewController */,
+				2A486DCF1D6FF6ED003676B0 /* TabViewControllerTests */,
+				2A486DDA1D6FF6ED003676B0 /* TabViewControllerUITests */,
+				2A486DB91D6FF6ED003676B0 /* Products */,
+				8D5B5F360F1AF8BEF4979FFC /* Pods */,
+				F9DB4E9458E1FC5161A67187 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A486DB91D6FF6ED003676B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A486DB81D6FF6ED003676B0 /* TabViewController.app */,
+				2A486DCC1D6FF6ED003676B0 /* TabViewControllerTests.xctest */,
+				2A486DD71D6FF6ED003676B0 /* TabViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A486DBA1D6FF6ED003676B0 /* TabViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A486DBB1D6FF6ED003676B0 /* AppDelegate.swift */,
+				2A486DBD1D6FF6ED003676B0 /* ViewController.swift */,
+				2A486DBF1D6FF6ED003676B0 /* Main.storyboard */,
+				2A486DC21D6FF6ED003676B0 /* Assets.xcassets */,
+				2A486DC41D6FF6ED003676B0 /* LaunchScreen.storyboard */,
+				2A486DC71D6FF6ED003676B0 /* Info.plist */,
+			);
+			path = TabViewController;
+			sourceTree = "<group>";
+		};
+		2A486DCF1D6FF6ED003676B0 /* TabViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A486DD01D6FF6ED003676B0 /* TabViewControllerTests.swift */,
+				2A486DD21D6FF6ED003676B0 /* Info.plist */,
+			);
+			path = TabViewControllerTests;
+			sourceTree = "<group>";
+		};
+		2A486DDA1D6FF6ED003676B0 /* TabViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A486DDB1D6FF6ED003676B0 /* TabViewControllerUITests.swift */,
+				2A486DDD1D6FF6ED003676B0 /* Info.plist */,
+			);
+			path = TabViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		8D5B5F360F1AF8BEF4979FFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AB119221C7837D680E516FB /* Pods-TabViewController.debug.xcconfig */,
+				B35024F1A484B35626D91740 /* Pods-TabViewController.release.xcconfig */,
+				E1CB770E37E70BC918ACFD98 /* Pods-TabViewControllerTests.debug.xcconfig */,
+				043FFC184C781F9BC07EBE37 /* Pods-TabViewControllerTests.release.xcconfig */,
+				63BBE2B7786B54ED8494C677 /* Pods-TabViewControllerUITests.debug.xcconfig */,
+				37C7E7C630DB1779EBB33FC4 /* Pods-TabViewControllerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9DB4E9458E1FC5161A67187 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B47A452FED947E45BC4E778 /* Pods_TabViewController.framework */,
+				C6D3B0A68D4CCA6BA55C0474 /* Pods_TabViewControllerTests.framework */,
+				12A46CB32110E02C10DC540C /* Pods_TabViewControllerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A486DB71D6FF6ED003676B0 /* TabViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A486DE01D6FF6ED003676B0 /* Build configuration list for PBXNativeTarget "TabViewController" */;
+			buildPhases = (
+				5588995B7946FA3198D1B388 /* [CP] Check Pods Manifest.lock */,
+				2A486DB41D6FF6ED003676B0 /* Sources */,
+				2A486DB51D6FF6ED003676B0 /* Frameworks */,
+				2A486DB61D6FF6ED003676B0 /* Resources */,
+				E8C912B978ED11B232877F95 /* [CP] Embed Pods Frameworks */,
+				BD95E9F89B13E0174781D71C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabViewController;
+			productName = TabViewController;
+			productReference = 2A486DB81D6FF6ED003676B0 /* TabViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A486DCB1D6FF6ED003676B0 /* TabViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A486DE31D6FF6ED003676B0 /* Build configuration list for PBXNativeTarget "TabViewControllerTests" */;
+			buildPhases = (
+				C01ADEF3BBC473BB5D38D22C /* [CP] Check Pods Manifest.lock */,
+				2A486DC81D6FF6ED003676B0 /* Sources */,
+				2A486DC91D6FF6ED003676B0 /* Frameworks */,
+				2A486DCA1D6FF6ED003676B0 /* Resources */,
+				43753A6065DDE552C1F0C176 /* [CP] Embed Pods Frameworks */,
+				5A5F868134B8A00C343286FE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A486DCE1D6FF6ED003676B0 /* PBXTargetDependency */,
+			);
+			name = TabViewControllerTests;
+			productName = TabViewControllerTests;
+			productReference = 2A486DCC1D6FF6ED003676B0 /* TabViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A486DD61D6FF6ED003676B0 /* TabViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A486DE61D6FF6ED003676B0 /* Build configuration list for PBXNativeTarget "TabViewControllerUITests" */;
+			buildPhases = (
+				212C7B51D7DC5D52147602FE /* [CP] Check Pods Manifest.lock */,
+				2A486DD31D6FF6ED003676B0 /* Sources */,
+				2A486DD41D6FF6ED003676B0 /* Frameworks */,
+				2A486DD51D6FF6ED003676B0 /* Resources */,
+				45330763A8EEDD5390391EF1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A486DD91D6FF6ED003676B0 /* PBXTargetDependency */,
+			);
+			name = TabViewControllerUITests;
+			productName = TabViewControllerUITests;
+			productReference = 2A486DD71D6FF6ED003676B0 /* TabViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A486DB01D6FF6ED003676B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mycompany;
+				TargetAttributes = {
+					2A486DB71D6FF6ED003676B0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N83P8AE7HP;
+					};
+					2A486DCB1D6FF6ED003676B0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N83P8AE7HP;
+						TestTargetID = 2A486DB71D6FF6ED003676B0;
+					};
+					2A486DD61D6FF6ED003676B0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N83P8AE7HP;
+						TestTargetID = 2A486DB71D6FF6ED003676B0;
+					};
+				};
+			};
+			buildConfigurationList = 2A486DB31D6FF6ED003676B0 /* Build configuration list for PBXProject "TabViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A486DAF1D6FF6ED003676B0;
+			productRefGroup = 2A486DB91D6FF6ED003676B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A486DB71D6FF6ED003676B0 /* TabViewController */,
+				2A486DCB1D6FF6ED003676B0 /* TabViewControllerTests */,
+				2A486DD61D6FF6ED003676B0 /* TabViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A486DB61D6FF6ED003676B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A486DC61D6FF6ED003676B0 /* LaunchScreen.storyboard in Resources */,
+				2A486DC31D6FF6ED003676B0 /* Assets.xcassets in Resources */,
+				2A486DC11D6FF6ED003676B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A486DCA1D6FF6ED003676B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A486DD51D6FF6ED003676B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		212C7B51D7DC5D52147602FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		43753A6065DDE552C1F0C176 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabViewControllerTests/Pods-TabViewControllerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45330763A8EEDD5390391EF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabViewControllerUITests/Pods-TabViewControllerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5588995B7946FA3198D1B388 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A5F868134B8A00C343286FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabViewControllerTests/Pods-TabViewControllerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD95E9F89B13E0174781D71C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabViewController/Pods-TabViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C01ADEF3BBC473BB5D38D22C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8C912B978ED11B232877F95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabViewController/Pods-TabViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A486DB41D6FF6ED003676B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A486DBE1D6FF6ED003676B0 /* ViewController.swift in Sources */,
+				2A486DBC1D6FF6ED003676B0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A486DC81D6FF6ED003676B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A486DD11D6FF6ED003676B0 /* TabViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A486DD31D6FF6ED003676B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A486DDC1D6FF6ED003676B0 /* TabViewControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A486DCE1D6FF6ED003676B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A486DB71D6FF6ED003676B0 /* TabViewController */;
+			targetProxy = 2A486DCD1D6FF6ED003676B0 /* PBXContainerItemProxy */;
+		};
+		2A486DD91D6FF6ED003676B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A486DB71D6FF6ED003676B0 /* TabViewController */;
+			targetProxy = 2A486DD81D6FF6ED003676B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A486DBF1D6FF6ED003676B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A486DC01D6FF6ED003676B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A486DC41D6FF6ED003676B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A486DC51D6FF6ED003676B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A486DDE1D6FF6ED003676B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A486DDF1D6FF6ED003676B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A486DE11D6FF6ED003676B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB119221C7837D680E516FB /* Pods-TabViewController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TabViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.mycompany.TabViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A486DE21D6FF6ED003676B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B35024F1A484B35626D91740 /* Pods-TabViewController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TabViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.mycompany.TabViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2A486DE41D6FF6ED003676B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1CB770E37E70BC918ACFD98 /* Pods-TabViewControllerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TabViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.mycompany.TabViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabViewController.app/TabViewController";
+			};
+			name = Debug;
+		};
+		2A486DE51D6FF6ED003676B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 043FFC184C781F9BC07EBE37 /* Pods-TabViewControllerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TabViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.mycompany.TabViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabViewController.app/TabViewController";
+			};
+			name = Release;
+		};
+		2A486DE71D6FF6ED003676B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63BBE2B7786B54ED8494C677 /* Pods-TabViewControllerUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = TabViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.mycompany.TabViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TabViewController;
+			};
+			name = Debug;
+		};
+		2A486DE81D6FF6ED003676B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C7E7C630DB1779EBB33FC4 /* Pods-TabViewControllerUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = TabViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.mycompany.TabViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TabViewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A486DB31D6FF6ED003676B0 /* Build configuration list for PBXProject "TabViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A486DDE1D6FF6ED003676B0 /* Debug */,
+				2A486DDF1D6FF6ED003676B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A486DE01D6FF6ED003676B0 /* Build configuration list for PBXNativeTarget "TabViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A486DE11D6FF6ED003676B0 /* Debug */,
+				2A486DE21D6FF6ED003676B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A486DE31D6FF6ED003676B0 /* Build configuration list for PBXNativeTarget "TabViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A486DE41D6FF6ED003676B0 /* Debug */,
+				2A486DE51D6FF6ED003676B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A486DE61D6FF6ED003676B0 /* Build configuration list for PBXNativeTarget "TabViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A486DE71D6FF6ED003676B0 /* Debug */,
+				2A486DE81D6FF6ED003676B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A486DB01D6FF6ED003676B0 /* Project object */;
+}
