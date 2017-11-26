@@ -21,6 +21,12 @@ class ViewController: UIViewController {
   
     filterScrollView.addSubview(myButton)
     
+    let buttonCoverView = makeButtonCoverView(color: UIColor.red)
+    myButton.addSubview(buttonCoverView)
+    
+    let myBtnCoverView = makeButtonCoverView(color: UIColor.red)
+    myButton.addSubview(myBtnCoverView)
+    
   }
 
   override func didReceiveMemoryWarning() {
@@ -40,6 +46,14 @@ class ViewController: UIViewController {
     button.clipsToBounds = true
     button.layer.cornerRadius = 3.0
     return button
+  }
+  
+  func makeButtonCoverView(color: UIColor) -> UIView {
+    let buttonCoverView = UIView()
+    buttonCoverView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+    buttonCoverView.backgroundColor = color
+    buttonCoverView.alpha = 0.1
+    return buttonCoverView
   }
 
 
