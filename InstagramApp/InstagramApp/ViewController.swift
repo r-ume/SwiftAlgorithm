@@ -20,18 +20,13 @@ class ViewController: UIViewController {
     let myButton = makeButton(x: CGFloat(10), action:  #selector(ViewController.tappedButton(_:)))
   
     filterScrollView.addSubview(myButton)
-    
-    let buttonCoverView = makeButtonCoverView(color: UIColor.red)
-    myButton.addSubview(buttonCoverView)
-    
+
     let myBtnCoverView = makeButtonCoverView(color: UIColor.red)
     myButton.addSubview(myBtnCoverView)
     
-  }
+    let myLabel = makeEffectLabel(x: CGFloat(15), text: "Original")
+    filterScrollView.addSubview(myLabel)
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
   
   @objc func tappedButton(_ sender: UIButton){
@@ -55,6 +50,21 @@ class ViewController: UIViewController {
     buttonCoverView.alpha = 0.1
     buttonCoverView.isUserInteractionEnabled = false
     return buttonCoverView
+  }
+  
+  func makeEffectLabel(x: CGFloat, text: String) -> UILabel {
+    let effectLabel = UILabel()
+    effectLabel.frame = CGRect(x: x, y: 130, width: 80, height: 20)
+    effectLabel.text = text
+    effectLabel.font = UIFont(name: "Helvetica-Light",size: CGFloat(15))
+    effectLabel.textAlignment = NSTextAlignment.center
+    effectLabel.textColor = UIColor.white
+    return effectLabel
+  }
+ 
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
   }
 
 
