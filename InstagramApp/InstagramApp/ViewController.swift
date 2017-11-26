@@ -22,15 +22,18 @@ class ViewController: UIViewController {
     button.setBackgroundImage(UIImage(named: "cat.png"), for: UIControlState.normal)
     button.layer.cornerRadius = 3.0
     button.clipsToBounds = true
-//    button.addTarget(self, action: #selector(ViewController.tappedButton(_:)), for: .touchUpInside)
+    button.addTarget(self, action: #selector(ViewController.tappedButton(_:)), for: .touchUpInside)
     filterScrollView.addSubview(button)
-
     
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  @objc func tappedButton(_ sender: UIButton){
+    print("Button tapped")
   }
 
 
