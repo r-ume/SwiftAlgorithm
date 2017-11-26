@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0055C8DD1FCAA24600E60A63 /* pug.png in Resources */ = {isa = PBXBuildFile; fileRef = 0055C8DC1FCAA24600E60A63 /* pug.png */; };
 		00DA1CEC1FC91FB300091807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1CEB1FC91FB300091807 /* AppDelegate.swift */; };
 		00DA1CEE1FC91FB300091807 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1CED1FC91FB300091807 /* ViewController.swift */; };
 		00DA1CF11FC91FB300091807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DA1CEF1FC91FB300091807 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0055C8DC1FCAA24600E60A63 /* pug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pug.png; path = ../../../../../Downloads/pug.png; sourceTree = "<group>"; };
 		00DA1CE81FC91FB300091807 /* UIScrollViewPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIScrollViewPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DA1CEB1FC91FB300091807 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00DA1CED1FC91FB300091807 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		00DA1CEA1FC91FB300091807 /* UIScrollViewPractice */ = {
 			isa = PBXGroup;
 			children = (
+				0055C8DC1FCAA24600E60A63 /* pug.png */,
 				00DA1CEB1FC91FB300091807 /* AppDelegate.swift */,
 				00DA1CED1FC91FB300091807 /* ViewController.swift */,
 				00DA1CEF1FC91FB300091807 /* Main.storyboard */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00DA1CF61FC91FB300091807 /* LaunchScreen.storyboard in Resources */,
+				0055C8DD1FCAA24600E60A63 /* pug.png in Resources */,
 				00DA1CF31FC91FB300091807 /* Assets.xcassets in Resources */,
 				00DA1CF11FC91FB300091807 /* Main.storyboard in Resources */,
 			);

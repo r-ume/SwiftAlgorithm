@@ -8,17 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UIScrollViewDelegate {
+  
+  @IBOutlet weak var myScrollView: UIScrollView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-  }
+    
+    self.myScrollView.frame.size = CGSize(width: self.view.frame.size.width, height: 280)
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+    self.myScrollView.contentSize = CGSize(width: 1000, height: 1000)
+    
+    let myImageView = UIImageView()
+    myImageView.image = UIImage(named: "pug.png")
+    myImageView.frame = CGRect(x: 0, y: 0, width: 1000, height: 1000)
+    myScrollView.addSubview(myImageView)
+
   }
+  
 
 
 }
