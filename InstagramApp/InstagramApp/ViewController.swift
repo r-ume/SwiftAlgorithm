@@ -15,14 +15,59 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    filterScrollView.contentSize = CGSize(width: 730, height: 150)
+    filterScrollView.contentSize = CGSize(width: 950, height: 150)
     
-    setEffectGroup(x: CGFloat(10), action:  #selector(ViewController.tappedButton(_:)), color: UIColor.red, text: "Original")
+    setEffectGroup(x: CGFloat(10), action: #selector(ViewController.tappedOriginalBtn(_:)), color: UIColor.clear, text: "Original", labelX: CGFloat(25))
+    setEffectGroup(x: CGFloat(120), action: #selector(ViewController.tappedRedBtn(_:)), color: UIColor.red, text: "Red", labelX: CGFloat(135))
+    setEffectGroup(x: CGFloat(230), action: #selector(ViewController.tappedGreenBtn(_:)), color: UIColor.green, text: "Green", labelX: 245)
+    setEffectGroup(x: CGFloat(340), action: #selector(ViewController.tappedBlueBtn(_:)), color: UIColor.blue, text: "Blue", labelX: 355)
+    setEffectGroup(x: CGFloat(450), action: #selector(ViewController.tappedYellowBtn(_:)), color: UIColor.yellow,  text: "Yellow", labelX: 465)
+    setEffectGroup(x: CGFloat(560), action: #selector(ViewController.tappedPurpleBtn(_:)), color: UIColor.purple, text: "Purple", labelX: 575)
+    setEffectGroup(x: CGFloat(670), action: #selector(ViewController.tappedCyanBtn(_:)), color: UIColor.cyan, text: "Cyan", labelX: 685)
+    setEffectGroup(x: CGFloat(780), action: #selector(ViewController.tappedWhiteBtn(_:)), color: UIColor.white, text: "White", labelX: 795)
 
   }
   
-  @objc func tappedButton(_ sender: UIButton){
-    print("Button tapped")
+  @objc func tappedOriginalBtn(_ sender: UIButton){
+    print("OriginalButtonがタップされた。")
+  }
+  
+  @objc func tappedRedBtn(_ sender: UIButton){
+    print("RedButtonがタップされた。")
+  }
+  
+  @objc func tappedGreenBtn(_ sender: UIButton){
+    print("GreenButtonがタップされた。")
+  }
+
+  @objc func tappedBlueBtn(_ sender: UIButton){
+    print("BlueButtonがタップされた。")
+  }
+
+  @objc func tappedYellowBtn(_ sender: UIButton){
+    print("YellowButtonがタップされた。")
+  }
+
+  @objc func tappedPurpleBtn(_ sender: UIButton){
+    print("PurpleButtonがタップされた。")
+  }
+
+  @objc func tappedCyanBtn(_ sender: UIButton){
+    print("CyanButtonがタップされた。")
+  }
+
+  @objc func tappedWhiteBtn(_ sender: UIButton){
+    print("WhiteButtonがタップされた。")
+  }
+
+  
+  func setEffectGroup(x: CGFloat, action: Selector, color: UIColor, text: String, labelX: CGFloat){
+    let originalButton = makeButton(x: x, action: action)
+    self.filterScrollView.addSubview(originalButton)
+    let originalBtnCoverView = makeButtonCoverView(color: color)
+    originalButton.addSubview(originalBtnCoverView)
+    let originalLabel = makeEffectLabel(labelX: labelX, text: text)
+    filterScrollView.addSubview(originalLabel)
   }
   
   func makeButton(x: CGFloat, action: Selector) -> UIButton {
@@ -44,23 +89,15 @@ class ViewController: UIViewController {
     return buttonCoverView
   }
   
-  func makeEffectLabel(x: CGFloat, text: String) -> UILabel {
+  func makeEffectLabel(labelX: CGFloat, text: String) -> UILabel {
     let effectLabel = UILabel()
-    effectLabel.frame = CGRect(x: x, y: 130, width: 80, height: 20)
+    effectLabel.frame = CGRect(x: labelX, y: 130, width: 80, height: 20)
+    print(labelX)
     effectLabel.text = text
-    effectLabel.font = UIFont(name: "Helvetica-Light",size: CGFloat(15))
+    effectLabel.font = UIFont(name: "Helvetica-Light", size: CGFloat(15))
     effectLabel.textAlignment = NSTextAlignment.center
     effectLabel.textColor = UIColor.white
     return effectLabel
-  }
-  
-  func setEffectGroup(x: CGFloat, action: Selector, color: UIColor, text: String){
-    let originalButton = makeButton(x: x, action: action)
-    self.filterScrollView.addSubview(originalButton)
-    let originalBtnCoverView = makeButtonCoverView(color: color)
-    originalButton.addSubview(originalBtnCoverView)
-    let originalLabel = makeEffectLabel(x: 17, text: text)
-    filterScrollView.addSubview(originalLabel)
   }
  
   override func didReceiveMemoryWarning() {
