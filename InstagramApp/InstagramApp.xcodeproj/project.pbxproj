@@ -14,6 +14,7 @@
 		0055C8F51FCAA28B00E60A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0055C8F31FCAA28B00E60A63 /* LaunchScreen.storyboard */; };
 		0055C9001FCAA28B00E60A63 /* InstagramAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055C8FF1FCAA28B00E60A63 /* InstagramAppTests.swift */; };
 		0055C90B1FCAA28B00E60A63 /* InstagramAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055C90A1FCAA28B00E60A63 /* InstagramAppUITests.swift */; };
+		0055C9191FCAA4E800E60A63 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0055C9181FCAA4E800E60A63 /* cat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0055C9061FCAA28B00E60A63 /* InstagramAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0055C90A1FCAA28B00E60A63 /* InstagramAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramAppUITests.swift; sourceTree = "<group>"; };
 		0055C90C1FCAA28B00E60A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0055C9181FCAA4E800E60A63 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		0055C8E91FCAA28B00E60A63 /* InstagramApp */ = {
 			isa = PBXGroup;
 			children = (
+				0055C9181FCAA4E800E60A63 /* cat.png */,
 				0055C8EA1FCAA28B00E60A63 /* AppDelegate.swift */,
 				0055C8EC1FCAA28B00E60A63 /* ViewController.swift */,
 				0055C8EE1FCAA28B00E60A63 /* Main.storyboard */,
@@ -234,6 +237,7 @@
 			files = (
 				0055C8F51FCAA28B00E60A63 /* LaunchScreen.storyboard in Resources */,
 				0055C8F21FCAA28B00E60A63 /* Assets.xcassets in Resources */,
+				0055C9191FCAA4E800E60A63 /* cat.png in Resources */,
 				0055C8F01FCAA28B00E60A63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
