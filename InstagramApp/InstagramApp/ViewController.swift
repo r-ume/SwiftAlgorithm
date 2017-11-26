@@ -53,6 +53,7 @@ class ViewController: UIViewController {
     buttonCoverView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
     buttonCoverView.backgroundColor = color
     buttonCoverView.alpha = 0.1
+    buttonCoverView.isUserInteractionEnabled = false
     return buttonCoverView
   }
 
