@@ -8,11 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UIWebViewDelegate {
+  @IBOutlet weak var myWebView: UIWebView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.myWebView.frame.size.height = self.view.frame.size.height
+    
+    self.myWebView.frame.size.width = self.view.frame.size.width
+    
+    let url = URL(string: "https://mini-mal.tokyo/about/")
+    let myURLRequest = URLRequest(url: url!)
+    myWebView.loadRequest(myURLRequest)
+    
+    myWebView.delegate = self
   }
 
   override func didReceiveMemoryWarning() {
@@ -20,6 +30,4 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
-
 }
-
