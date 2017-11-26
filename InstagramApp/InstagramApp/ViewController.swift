@@ -17,15 +17,7 @@ class ViewController: UIViewController {
     
     filterScrollView.contentSize = CGSize(width: 730, height: 150)
     
-    let myButton = makeButton(x: CGFloat(10), action:  #selector(ViewController.tappedButton(_:)))
-  
-    filterScrollView.addSubview(myButton)
-
-    let myBtnCoverView = makeButtonCoverView(color: UIColor.red)
-    myButton.addSubview(myBtnCoverView)
-    
-    let myLabel = makeEffectLabel(x: CGFloat(15), text: "Original")
-    filterScrollView.addSubview(myLabel)
+    setEffectGroup(x: CGFloat(10), action:  #selector(ViewController.tappedButton(_:)), color: UIColor.red, text: "Original")
 
   }
   
@@ -60,6 +52,15 @@ class ViewController: UIViewController {
     effectLabel.textAlignment = NSTextAlignment.center
     effectLabel.textColor = UIColor.white
     return effectLabel
+  }
+  
+  func setEffectGroup(x: CGFloat, action: Selector, color: UIColor, text: String){
+    let originalButton = makeButton(x: x, action: action)
+    self.filterScrollView.addSubview(originalButton)
+    let originalBtnCoverView = makeButtonCoverView(color: color)
+    originalButton.addSubview(originalBtnCoverView)
+    let originalLabel = makeEffectLabel(x: 17, text: text)
+    filterScrollView.addSubview(originalLabel)
   }
  
   override func didReceiveMemoryWarning() {
