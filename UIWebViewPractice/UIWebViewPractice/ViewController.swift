@@ -29,5 +29,13 @@ class ViewController: UIViewController, UIWebViewDelegate {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
+  
+  func webViewDidStartLoad(_ webView: UIWebView) {
+    UIApplication.shared.isNetworkActivityIndicatorVisible = true
+  }
+  
+  func webViewDidFinishLoad(_ webView: UIWebView) {
+    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+  }
 
 }
