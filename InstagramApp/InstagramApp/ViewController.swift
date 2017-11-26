@@ -10,12 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var myImageView: UIImageView!
   @IBOutlet weak var filterScrollView: UIScrollView!
+  
+  let coverView = UIView()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    coverView.frame = CGRect(
+        x:      0,
+        y:      0,
+        width:  self.view.frame.size.width,
+        height: self.view.frame.size.height
+    )
+    
     filterScrollView.contentSize = CGSize(width: 950, height: 150)
+    myImageView.addSubview(coverView)
     
     setEffectGroup(x: CGFloat(10), action: #selector(ViewController.tappedOriginalBtn(_:)), color: UIColor.clear, text: "Original", labelX: CGFloat(25))
     setEffectGroup(x: CGFloat(120), action: #selector(ViewController.tappedRedBtn(_:)), color: UIColor.red, text: "Red", labelX: CGFloat(135))
@@ -25,7 +36,7 @@ class ViewController: UIViewController {
     setEffectGroup(x: CGFloat(560), action: #selector(ViewController.tappedPurpleBtn(_:)), color: UIColor.purple, text: "Purple", labelX: 575)
     setEffectGroup(x: CGFloat(670), action: #selector(ViewController.tappedCyanBtn(_:)), color: UIColor.cyan, text: "Cyan", labelX: 685)
     setEffectGroup(x: CGFloat(780), action: #selector(ViewController.tappedWhiteBtn(_:)), color: UIColor.white, text: "White", labelX: 795)
-
+    
   }
   
   @objc func tappedOriginalBtn(_ sender: UIButton){
@@ -34,30 +45,45 @@ class ViewController: UIViewController {
   
   @objc func tappedRedBtn(_ sender: UIButton){
     print("RedButtonがタップされた。")
+    coverView.backgroundColor = UIColor.red
+    coverView.alpha = 0.1
+
   }
   
   @objc func tappedGreenBtn(_ sender: UIButton){
     print("GreenButtonがタップされた。")
+    coverView.backgroundColor = UIColor.green
+    coverView.alpha = 0.1
   }
 
   @objc func tappedBlueBtn(_ sender: UIButton){
     print("BlueButtonがタップされた。")
+    coverView.backgroundColor = UIColor.blue
+    coverView.alpha = 0.1
   }
 
   @objc func tappedYellowBtn(_ sender: UIButton){
     print("YellowButtonがタップされた。")
+    coverView.backgroundColor = UIColor.yellow
+    coverView.alpha = 0.1
   }
 
   @objc func tappedPurpleBtn(_ sender: UIButton){
     print("PurpleButtonがタップされた。")
+    coverView.backgroundColor = UIColor.purple
+    coverView.alpha = 0.1
   }
 
   @objc func tappedCyanBtn(_ sender: UIButton){
     print("CyanButtonがタップされた。")
+    coverView.backgroundColor = UIColor.cyan
+    coverView.alpha = 0.1
   }
 
   @objc func tappedWhiteBtn(_ sender: UIButton){
     print("WhiteButtonがタップされた。")
+    coverView.backgroundColor = UIColor.white
+    coverView.alpha = 0.1
   }
 
   
@@ -92,7 +118,6 @@ class ViewController: UIViewController {
   func makeEffectLabel(labelX: CGFloat, text: String) -> UILabel {
     let effectLabel = UILabel()
     effectLabel.frame = CGRect(x: labelX, y: 130, width: 80, height: 20)
-    print(labelX)
     effectLabel.text = text
     effectLabel.font = UIFont(name: "Helvetica-Light", size: CGFloat(15))
     effectLabel.textAlignment = NSTextAlignment.center
