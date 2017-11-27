@@ -13,11 +13,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    self.myWebView.frame.size.height = self.view.frame.size.height
-    
-    self.myWebView.frame.size.width = self.view.frame.size.width
-    
+  
     let url = URL(string: "https://mini-mal.tokyo/about/")
     let myURLRequest = URLRequest(url: url!)
     myWebView.loadRequest(myURLRequest)
@@ -37,5 +33,14 @@ class ViewController: UIViewController, UIWebViewDelegate {
   func webViewDidFinishLoad(_ webView: UIWebView) {
     UIApplication.shared.isNetworkActivityIndicatorVisible = false
   }
-
+  
+  @IBAction func backButton(_ sender: Any) {
+    myWebView.goBack()
+  }
+  
+  
+  @IBAction func nextButton(_ sender: Any) {
+    myWebView.goForward()
+  }
+  
 }

@@ -14,6 +14,11 @@
 		001308D81FCAC69300DB8B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001308D61FCAC69300DB8B88 /* LaunchScreen.storyboard */; };
 		001308E31FCAC69300DB8B88 /* UIWebViewPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001308E21FCAC69300DB8B88 /* UIWebViewPracticeTests.swift */; };
 		001308EE1FCAC69400DB8B88 /* UIWebViewPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001308ED1FCAC69400DB8B88 /* UIWebViewPracticeUITests.swift */; };
+		001309001FCAD67900DB8B88 /* back_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 001308FB1FCAD67800DB8B88 /* back_icon.png */; };
+		001309011FCAD67900DB8B88 /* go_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 001308FC1FCAD67800DB8B88 /* go_icon.png */; };
+		001309021FCAD67900DB8B88 /* reload_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 001308FD1FCAD67800DB8B88 /* reload_icon.png */; };
+		001309031FCAD67900DB8B88 /* stop_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 001308FE1FCAD67900DB8B88 /* stop_icon.png */; };
+		001309041FCAD67900DB8B88 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 001308FF1FCAD67900DB8B88 /* menu_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		001308E91FCAC69400DB8B88 /* UIWebViewPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIWebViewPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		001308ED1FCAC69400DB8B88 /* UIWebViewPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewPracticeUITests.swift; sourceTree = "<group>"; };
 		001308EF1FCAC69400DB8B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001308FB1FCAD67800DB8B88 /* back_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back_icon.png; path = ../../../../../Downloads/UIWebView_images/back_icon.png; sourceTree = "<group>"; };
+		001308FC1FCAD67800DB8B88 /* go_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = go_icon.png; path = ../../../../../Downloads/UIWebView_images/go_icon.png; sourceTree = "<group>"; };
+		001308FD1FCAD67800DB8B88 /* reload_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reload_icon.png; path = ../../../../../Downloads/UIWebView_images/reload_icon.png; sourceTree = "<group>"; };
+		001308FE1FCAD67900DB8B88 /* stop_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop_icon.png; path = ../../../../../Downloads/UIWebView_images/stop_icon.png; sourceTree = "<group>"; };
+		001308FF1FCAD67900DB8B88 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_icon.png; path = ../../../../../Downloads/UIWebView_images/menu_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,11 @@
 		001308CC1FCAC69300DB8B88 /* UIWebViewPractice */ = {
 			isa = PBXGroup;
 			children = (
+				001308FB1FCAD67800DB8B88 /* back_icon.png */,
+				001308FC1FCAD67800DB8B88 /* go_icon.png */,
+				001308FF1FCAD67900DB8B88 /* menu_icon.png */,
+				001308FD1FCAD67800DB8B88 /* reload_icon.png */,
+				001308FE1FCAD67900DB8B88 /* stop_icon.png */,
 				001308CD1FCAC69300DB8B88 /* AppDelegate.swift */,
 				001308CF1FCAC69300DB8B88 /* ViewController.swift */,
 				001308D11FCAC69300DB8B88 /* Main.storyboard */,
@@ -233,8 +248,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				001308D81FCAC69300DB8B88 /* LaunchScreen.storyboard in Resources */,
+				001309001FCAD67900DB8B88 /* back_icon.png in Resources */,
+				001309011FCAD67900DB8B88 /* go_icon.png in Resources */,
 				001308D51FCAC69300DB8B88 /* Assets.xcassets in Resources */,
+				001309031FCAD67900DB8B88 /* stop_icon.png in Resources */,
+				001309041FCAD67900DB8B88 /* menu_icon.png in Resources */,
 				001308D31FCAC69300DB8B88 /* Main.storyboard in Resources */,
+				001309021FCAD67900DB8B88 /* reload_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
