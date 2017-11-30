@@ -34,13 +34,20 @@ class ViewController: UIViewController, UIWebViewDelegate {
     UIApplication.shared.isNetworkActivityIndicatorVisible = false
   }
   
-  @IBAction func backButton(_ sender: Any) {
+  @IBAction func backButton(_ sender: UIButton) {
     myWebView.goBack()
   }
   
-  
-  @IBAction func nextButton(_ sender: Any) {
+  @IBAction func nextButton(_ sender: UIButton) {
     myWebView.goForward()
+  }
+  
+  @IBAction func reloadButton(_ sender: UIButton) {
+   myWebView.reload()
+  }
+  
+  @IBAction func stopLoadingButton(_ sender: UIButton) {
+    myWebView.stopLoading()
   }
   
 }

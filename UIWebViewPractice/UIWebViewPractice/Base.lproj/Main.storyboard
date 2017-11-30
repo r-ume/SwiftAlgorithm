@@ -55,6 +55,22 @@
                                             <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="omq-pl-O1Y"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dr-mZ-BYx">
+                                        <rect key="frame" x="150" y="8" width="32" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="reload_icon.png"/>
+                                        <connections>
+                                            <action selector="reloadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJk-2M-NIn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrk-Xa-2yU">
+                                        <rect key="frame" x="220" y="8" width="33" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="stop_icon.png"/>
+                                        <connections>
+                                            <action selector="stopLoadingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yK0-6T-bDz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.016699751079999998" green="0.20554700249999999" blue="0.34049141840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -93,5 +109,7 @@
     <resources>
         <image name="back_icon.png" width="120" height="120"/>
         <image name="go_icon.png" width="120" height="120"/>
+        <image name="reload_icon.png" width="120" height="120"/>
+        <image name="stop_icon.png" width="120" height="120"/>
     </resources>
 </document>
