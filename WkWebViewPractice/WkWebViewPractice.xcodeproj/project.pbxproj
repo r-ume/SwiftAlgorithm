@@ -14,6 +14,11 @@
 		00BE57A51FD14C2300C31AC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BE57A31FD14C2300C31AC7 /* LaunchScreen.storyboard */; };
 		00BE57B01FD14C2300C31AC7 /* WkWebViewPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BE57AF1FD14C2300C31AC7 /* WkWebViewPracticeTests.swift */; };
 		00BE57BB1FD14C2300C31AC7 /* WkWebViewPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BE57BA1FD14C2300C31AC7 /* WkWebViewPracticeUITests.swift */; };
+		00BE57CD1FD14F3400C31AC7 /* go_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BE57C81FD14F3400C31AC7 /* go_icon.png */; };
+		00BE57CE1FD14F3400C31AC7 /* reload_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BE57C91FD14F3400C31AC7 /* reload_icon.png */; };
+		00BE57CF1FD14F3400C31AC7 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BE57CA1FD14F3400C31AC7 /* menu_icon.png */; };
+		00BE57D01FD14F3400C31AC7 /* stop_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BE57CB1FD14F3400C31AC7 /* stop_icon.png */; };
+		00BE57D11FD14F3400C31AC7 /* back_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BE57CC1FD14F3400C31AC7 /* back_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		00BE57B61FD14C2300C31AC7 /* WkWebViewPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WkWebViewPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BE57BA1FD14C2300C31AC7 /* WkWebViewPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WkWebViewPracticeUITests.swift; sourceTree = "<group>"; };
 		00BE57BC1FD14C2300C31AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00BE57C81FD14F3400C31AC7 /* go_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = go_icon.png; path = "../../../../../Downloads/UIWebView_images 2/go_icon.png"; sourceTree = "<group>"; };
+		00BE57C91FD14F3400C31AC7 /* reload_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reload_icon.png; path = "../../../../../Downloads/UIWebView_images 2/reload_icon.png"; sourceTree = "<group>"; };
+		00BE57CA1FD14F3400C31AC7 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_icon.png; path = "../../../../../Downloads/UIWebView_images 2/menu_icon.png"; sourceTree = "<group>"; };
+		00BE57CB1FD14F3400C31AC7 /* stop_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop_icon.png; path = "../../../../../Downloads/UIWebView_images 2/stop_icon.png"; sourceTree = "<group>"; };
+		00BE57CC1FD14F3400C31AC7 /* back_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back_icon.png; path = "../../../../../Downloads/UIWebView_images 2/back_icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,11 @@
 				00BE579C1FD14C2300C31AC7 /* ViewController.swift */,
 				00BE579E1FD14C2300C31AC7 /* Main.storyboard */,
 				00BE57A11FD14C2300C31AC7 /* Assets.xcassets */,
+				00BE57CC1FD14F3400C31AC7 /* back_icon.png */,
+				00BE57C81FD14F3400C31AC7 /* go_icon.png */,
+				00BE57CA1FD14F3400C31AC7 /* menu_icon.png */,
+				00BE57C91FD14F3400C31AC7 /* reload_icon.png */,
+				00BE57CB1FD14F3400C31AC7 /* stop_icon.png */,
 				00BE57A31FD14C2300C31AC7 /* LaunchScreen.storyboard */,
 				00BE57A61FD14C2300C31AC7 /* Info.plist */,
 			);
@@ -232,9 +247,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BE57CD1FD14F3400C31AC7 /* go_icon.png in Resources */,
+				00BE57D11FD14F3400C31AC7 /* back_icon.png in Resources */,
 				00BE57A51FD14C2300C31AC7 /* LaunchScreen.storyboard in Resources */,
+				00BE57CE1FD14F3400C31AC7 /* reload_icon.png in Resources */,
 				00BE57A21FD14C2300C31AC7 /* Assets.xcassets in Resources */,
+				00BE57D01FD14F3400C31AC7 /* stop_icon.png in Resources */,
 				00BE57A01FD14C2300C31AC7 /* Main.storyboard in Resources */,
+				00BE57CF1FD14F3400C31AC7 /* menu_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
