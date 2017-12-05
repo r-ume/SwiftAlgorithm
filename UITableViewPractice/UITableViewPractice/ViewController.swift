@@ -12,6 +12,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
   @IBOutlet weak var myTableView: UITableView!
   
+  let dog = 0
+  let cat = 1
+  let dogImageArray = ["Pug", "Chihuahua","Miniature Dachshund", "Maltese", "Corgi"]
+  let catImageArray = ["American Shorthair", "Munchkin", "Persian", "Russian Blue", "Mikeneko"]
+  let sectionTitle  = ["Dog", "Cat"]
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -39,8 +45,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   //セルの内容
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "myCell")
-    cell.textLabel?.text = "Section：\(indexPath.section)"
-    cell.detailTextLabel?.text = "Row：\(indexPath.row)"
+    cell.textLabel?.text = sectionTitle[indexPath.section]
+    cell.detailTextLabel?.text = indexPath.section == dog ? "This dog is a \(dogImageArray[indexPath.row])" : "This cat is a \(catImageArray[indexPath.row])"
+    cell.imageView?.image = indexPath.section == dog ? UIImage(named: "\(dogImageArray[indexPath.row])") : UIImage(named: "\(catImageArray[indexPath.row])")
     return cell
   }
   
