@@ -14,6 +14,7 @@
 		0091EC3F1FD6A99A008B90E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0091EC3D1FD6A99A008B90E3 /* LaunchScreen.storyboard */; };
 		0091EC4A1FD6A99A008B90E3 /* UITableViewPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0091EC491FD6A99A008B90E3 /* UITableViewPracticeTests.swift */; };
 		0091EC551FD6A99A008B90E3 /* UITableViewPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0091EC541FD6A99A008B90E3 /* UITableViewPracticeUITests.swift */; };
+		0091EC631FD6AB1E008B90E3 /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 0091EC621FD6AB1D008B90E3 /* dog.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0091EC501FD6A99A008B90E3 /* UITableViewPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITableViewPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0091EC541FD6A99A008B90E3 /* UITableViewPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewPracticeUITests.swift; sourceTree = "<group>"; };
 		0091EC561FD6A99A008B90E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0091EC621FD6AB1D008B90E3 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog.png; path = ../../../../../Downloads/dog.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				0091EC341FD6A99A008B90E3 /* AppDelegate.swift */,
 				0091EC361FD6A99A008B90E3 /* ViewController.swift */,
 				0091EC381FD6A99A008B90E3 /* Main.storyboard */,
+				0091EC621FD6AB1D008B90E3 /* dog.png */,
 				0091EC3B1FD6A99A008B90E3 /* Assets.xcassets */,
 				0091EC3D1FD6A99A008B90E3 /* LaunchScreen.storyboard */,
 				0091EC401FD6A99A008B90E3 /* Info.plist */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0091EC631FD6AB1E008B90E3 /* dog.png in Resources */,
 				0091EC3F1FD6A99A008B90E3 /* LaunchScreen.storyboard in Resources */,
 				0091EC3C1FD6A99A008B90E3 /* Assets.xcassets in Resources */,
 				0091EC3A1FD6A99A008B90E3 /* Main.storyboard in Resources */,
