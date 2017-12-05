@@ -8,7 +8,7 @@
 
 import UIKit
 import WebKit
-
+import Social
 
 class ViewController: UIViewController, WKNavigationDelegate {
   @IBOutlet weak var titleLabel: UILabel!
@@ -75,9 +75,15 @@ class ViewController: UIViewController, WKNavigationDelegate {
       self.openSafari()
     })
     
+    let facebookAction = UIAlertAction(title: "Facebook", style: .default, handler: {
+      (action: UIAlertAction!) -> Void in
+      self.facebookShare()
+    })
+    
     //アクションシートにアクションの追加
     alertController.addAction(safariAction)
-    
+    alertController.addAction(facebookAction)
+
     //アクションシートの表示
     self.present(alertController, animated: true, completion: nil)
     
@@ -87,10 +93,19 @@ class ViewController: UIViewController, WKNavigationDelegate {
     UIApplication.shared.openURL(myWkWebView.url!)
   }
   
+  func facebookShare(){
+    let facebookVC = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+    facebookVC?.add(myWkWebView.url)
+    facebookVC?.setInitialText("#TECH::CAMP")
+    self.present((facebookVC)!, animated: true, completion: nil)
+  }
+  
   deinit {
     //監視解除
     myWkWebView.removeObserver(self, forKeyPath: "title")
   }
+  
+
   
   
 }
