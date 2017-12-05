@@ -17,6 +17,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     myTableView.delegate = self
     myTableView.dataSource = self
+    
+    myTableView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
   }
 
   override func didReceiveMemoryWarning() {
@@ -24,17 +26,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // Dispose of any resources that can be recreated.
   }
 
-  //  行数10
+  //  行数
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 10
+    return 5
+  }
+  
+  //セクションの数
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 2
   }
   
   //セルの内容
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "myCell")
-    cell.textLabel?.text = "Dog"
-    cell.detailTextLabel?.text = "This dog is a pug"
-    cell.imageView?.image = UIImage(named: "dog.png")
+    cell.textLabel?.text = "Section：\(indexPath.section)"
+    cell.detailTextLabel?.text = "Row：\(indexPath.row)"
     return cell
   }
   
@@ -45,7 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   
   //セクションのタイトル
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    return "Animal"
+    return "Section:\(section)"
   }
   
   //セクションのタイトルの高さ
