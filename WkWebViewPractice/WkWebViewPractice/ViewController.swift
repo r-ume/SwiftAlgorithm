@@ -29,7 +29,6 @@ class ViewController: UIViewController, WKNavigationDelegate {
     myWkWebView.load(myURLRequest)
     
     myWkWebView.addObserver(self, forKeyPath: "title", options: .new, context: nil)
-
   }
   
   override func didReceiveMemoryWarning() {
@@ -71,7 +70,21 @@ class ViewController: UIViewController, WKNavigationDelegate {
   @IBAction func openActionSheet(_ sender: UIButton) {
     let alertController = UIAlertController(title: "アクションシート", message: "アクションシートです。", preferredStyle: .actionSheet)
     
+    let safariAction = UIAlertAction(title: "Safariで開く", style: .default, handler: {
+      (action: UIAlertAction!) -> Void in
+      self.openSafari()
+    })
+    
+    //アクションシートにアクションの追加
+    alertController.addAction(safariAction)
+    
+    //アクションシートの表示
     self.present(alertController, animated: true, completion: nil)
+    
+  }
+  
+  func openSafari(){
+    UIApplication.shared.openURL(myWkWebView.url!)
   }
   
   deinit {
