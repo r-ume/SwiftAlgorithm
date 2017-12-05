@@ -8,8 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-  
+class ViewController: UIViewController, ModalViewDelegate {
   @IBOutlet weak var label: UILabel!
   
   override func viewDidLoad() {
@@ -27,8 +26,13 @@ class ViewController: UIViewController {
   }
   
   func showModal() {
-    let modalView = ModelView(frame: self.view.bounds)
-    self.view.addSubview(ModelView)
+    let modalView = ModalView(frame: self.view.bounds)
+    modalView.customDelegate = self
+    self.view.addSubview(modalView)
+  }
+  
+  func modalView(text: String){
+    label.text = text
   }
 }
 
