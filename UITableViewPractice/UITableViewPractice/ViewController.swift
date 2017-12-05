@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
   //  行数
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 5
+    return section == 0 ? dogImageArray.count : catImageArray.count
   }
   
   //セクションの数
