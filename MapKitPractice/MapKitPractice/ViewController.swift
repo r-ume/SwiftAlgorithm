@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate {
 
   let myMapView = MKMapView()
   
@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     let longPressGesture = UILongPressGestureRecognizer()
     longPressGesture.addTarget(self, action: #selector(longPressed(sender:)))
     myMapView.addGestureRecognizer(longPressGesture)
+    
+    myMapView.delegate = self
   }
 
   override func didReceiveMemoryWarning() {
@@ -40,8 +42,34 @@ class ViewController: UIViewController {
     annotation.title = "タイトル"
     annotation.subtitle = "サブタイトル"
     self.myMapView.addAnnotation(annotation)
-    
-    print("Hello World!!")
   }
+  
+  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    var annotationView = myMapView.dequeueReusableAnnotationView(withIdentifier: "annotation") as? MKPinAnnotationView
+    if annotationView == nil {
+      annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "annotation")
+    }
+    
+    //落下アニメーションを有効にする
+    annotationView?.animatesDrop = true
+    
+    //ピンがタップされた時に出るビューを表示可能にする
+    annotationView?.canShowCallout = true
+    
+    //ドラッグ可能にする
+    annotationView?.isDraggable = true
+    
+    return annotationView
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
 
