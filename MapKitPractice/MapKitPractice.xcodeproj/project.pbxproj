@@ -194,6 +194,11 @@
 					00870E1E20130DE8004B2025 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					00870E3220130DE8004B2025 = {
 						CreatedOnToolsVersion = 9.2;

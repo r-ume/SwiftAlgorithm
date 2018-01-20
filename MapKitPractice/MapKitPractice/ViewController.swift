@@ -8,10 +8,12 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
   let myMapView = MKMapView()
+  let myLocationManager = CLLocationManager()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -23,6 +25,15 @@ class ViewController: UIViewController, MKMapViewDelegate {
     myMapView.addGestureRecognizer(longPressGesture)
     
     myMapView.delegate = self
+    self.myLocationManager.delegate = self
+    
+    let status = CLLocationManager.authorizationStatus()
+    if status == CLAuthorizationStatus.notDetermined {
+      self.myLocationManager.requestAlwaysAuthorization()
+    }
+    
+    print(status == CLAuthorizationStatus.notDetermined)
+    self.myLocationManager.startUpdatingLocation()
   }
 
   override func didReceiveMemoryWarning() {
@@ -62,14 +73,12 @@ class ViewController: UIViewController, MKMapViewDelegate {
     return annotationView
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    print("現在地の取得に成功しました")
+  }
+  //５.現在地の取得に失敗した場合の処理
+  func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+    print("現在地の取得に失敗しました")
+  }
 }
 
