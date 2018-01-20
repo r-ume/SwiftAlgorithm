@@ -32,7 +32,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
       self.myLocationManager.requestAlwaysAuthorization()
     }
     
-    print(status == CLAuthorizationStatus.notDetermined)
     self.myLocationManager.startUpdatingLocation()
   }
 
@@ -74,7 +73,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
   }
   
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-    print("現在地の取得に成功しました")
+    let myLocation = locations.last! as CLLocation
+    let currentLocation = myLocation.coordinate
+
+    let mySpan = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+    let myRegion = MKCoordinateRegionMake(currentLocation, mySpan)
+    //表示領域のアニメーション付きで適用
+    myMapView.setRegion(myRegion, animated: true)
   }
   //５.現在地の取得に失敗した場合の処理
   func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
