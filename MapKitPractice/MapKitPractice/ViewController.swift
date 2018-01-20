@@ -24,6 +24,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     longPressGesture.addTarget(self, action: #selector(longPressed(sender:)))
     myMapView.addGestureRecognizer(longPressGesture)
     
+    myMapView.showsUserLocation = true
+
     myMapView.delegate = self
     self.myLocationManager.delegate = self
     
@@ -33,6 +35,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
     
     self.myLocationManager.startUpdatingLocation()
+    
   }
 
   override func didReceiveMemoryWarning() {
@@ -55,6 +58,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
   }
   
   func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    if annotation as? MKUserLocation == mapView.userLocation {
+      return nil
+    }
+    
     var annotationView = myMapView.dequeueReusableAnnotationView(withIdentifier: "annotation") as? MKPinAnnotationView
     if annotationView == nil {
       annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "annotation")
