@@ -1,3 +1,11 @@
+var num: Int?
+var str: String?
+var nonOptional: String
+
+num = nil
+str = nil
+nonOptional = nil
+
 // Basic
 var value1 :String?
 

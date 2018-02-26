@@ -92,5 +92,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
   func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
     print("現在地の取得に失敗しました")
   }
+  
+  func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    var statusStr = ""
+    switch (status) {
+    case .notDetermined:
+      statusStr = "NotDetermined"
+    case .restricted:
+      statusStr = "Restricted"
+    case .denied:
+      statusStr = "Denied"
+    case .authorizedAlways:
+      statusStr = "AuthorizedAlways"
+    case .authorizedWhenInUse:
+      statusStr = "AuthorizedWhenInUse"
+    }
+    print(" CLAuthorizationStatus: \(statusStr)")
+    
+  }
 }
 
