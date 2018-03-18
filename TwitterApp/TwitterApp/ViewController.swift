@@ -36,6 +36,12 @@ class ViewController: UIViewController {
         let textView = self.makeTextView()
         tweetView.addSubview(textView)
         
+        let nameLabel = self.makeLabel(text: "名前", y: 5)
+        tweetView.addSubview(nameLabel)
+
+        let tweetLabel = self.makeLabel(text: "ツイート内容", y: 85)
+        tweetView.addSubview(tweetLabel)
+        
     }
 
     //-------------部品の生成のための処理--------------
@@ -73,6 +79,13 @@ class ViewController: UIViewController {
         textView.layer.borderColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0).cgColor
         textView.layer.borderWidth = 1
         return textView
+    }
+    
+    func makeLabel(text: String, y: CGFloat) -> UILabel{
+        let label = UILabel(frame: CGRect(x:10, y: y, width:280, height:40))
+        label.text = text
+        label.font = UIFont(name: "HiraKakuProN-W6", size: 15)
+        return label
     }
 }
 
