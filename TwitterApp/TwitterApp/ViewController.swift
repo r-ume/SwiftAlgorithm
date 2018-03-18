@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var backTweetView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +26,7 @@ class ViewController: UIViewController {
 
     
     @IBAction func tapButton(_ sender: UIButton) {
-        let backTweetView = self.makeBackTweetView()
+        backTweetView = self.makeBackTweetView()
         self.view.addSubview(backTweetView)
         
         let tweetView = self.makeTweetView()
@@ -101,6 +103,7 @@ class ViewController: UIViewController {
         cancelBtn.setBackgroundImage(UIImage(named: "cancel.png"), for: .normal)
         cancelBtn.backgroundColor = UIColor(red: 0.14, green: 0.3, blue: 0.68, alpha: 1.0)
         cancelBtn.layer.cornerRadius = cancelBtn.frame.width / 2
+        cancelBtn.addTarget(self, action: #selector(self.tappedCancelBtn(_:)), for:.touchUpInside)
         return cancelBtn
     }
     
@@ -113,6 +116,11 @@ class ViewController: UIViewController {
         submitBtn.setTitleColor(UIColor.gray, for: UIControlState.highlighted)
         submitBtn.layer.cornerRadius = 7
         return submitBtn
+    }
+    
+    //-------------ボタンがタップされた時の処理----------
+    @objc func tappedCancelBtn(_: AnyObject){
+        backTweetView.removeFromSuperview()
     }
 }
 
