@@ -8,15 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var backTweetView: UIView!
     var textField: UITextField!
     var textView: UITextView!
+    
+    var tweetArray: Array<Dictionary<String, String>> = []
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        self.tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +33,38 @@ class ViewController: UIViewController {
     }
 
     //-------------TableViewの処理------------------
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tweetArray.count
+    }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 85
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
+        let tweet = tweetArray[indexPath.row]
+        
+        let nameLabel = cell.viewWithTag(1) as! UILabel
+        nameLabel.text = tweet["name"]
+        nameLabel.font = UIFont(name: "HirakakuProN-W6", size: 13)
+        
+        let textLabel = cell.viewWithTag(2) as! UILabel
+        textLabel.text = tweet["text"]
+        textLabel.font = UIFont(name: "HirakakuProN-W6", size: 18)
+
+        let timeLabel = cell.viewWithTag(3) as! UILabel
+        timeLabel.text = tweet["time"]
+        timeLabel.font = UIFont(name: "HirakakuProN-W3", size: 10)
+        timeLabel.textColor = UIColor.gray
+        
+        let myImageView = cell.viewWithTag(4) as! UIImageView
+        myImageView.image = UIImage(named: "pug")
+        myImageView.layer.cornerRadius = 3
+        myImageView.layer.masksToBounds = true
+        
+        return cell
+    }
     
     //-------------ボタンがタップされた時の処理----------
     @IBAction func tapButton(_ sender: UIButton) {
@@ -66,9 +105,18 @@ class ViewController: UIViewController {
         let tweet = self.textView.text!
         
         print("名前:\(name)、ツイート内容:\(tweet)")
+        
+        var tweetDictionary: Dictionary<String, String> = [:]
+        tweetDictionary["name"] = textField.text!
+        tweetDictionary["text"] = textView.text
+        tweetDictionary["time"] = self.getToday()
+        tweetArray.insert(tweetDictionary, at: 0)
+
         self.backTweetView.removeFromSuperview()
         textField.text = ""
         textView.text = ""
+        
+        tableView.reloadData()
     }
     
     //-------------部品の生成のための処理--------------
@@ -138,6 +186,14 @@ class ViewController: UIViewController {
         submitBtn.addTarget(self, action: #selector(self.tappedSubmitBtn(_:)), for:.touchUpInside)
         return submitBtn
     }
+    
+    func getToday(format:String = "yyyy/MM/dd HH:mm:ss") -> String {
+        let now = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        return formatter.string(from: now as Date)
+    }
+
 
 }
 
