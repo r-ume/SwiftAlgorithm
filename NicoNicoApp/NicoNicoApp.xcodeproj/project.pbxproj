@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FDEFC6D205E61F2007E7C51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDEFC6C205E61F2007E7C51 /* AppDelegate.swift */; };
+		8FDEFC6F205E61F2007E7C51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDEFC6E205E61F2007E7C51 /* ViewController.swift */; };
+		8FDEFC72205E61F2007E7C51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FDEFC70205E61F2007E7C51 /* Main.storyboard */; };
+		8FDEFC74205E61F2007E7C51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FDEFC73205E61F2007E7C51 /* Assets.xcassets */; };
+		8FDEFC77205E61F2007E7C51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FDEFC75205E61F2007E7C51 /* LaunchScreen.storyboard */; };
+		8FDEFC82205E61F2007E7C51 /* NicoNicoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDEFC81205E61F2007E7C51 /* NicoNicoAppTests.swift */; };
+		8FDEFC8D205E61F2007E7C51 /* NicoNicoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDEFC8C205E61F2007E7C51 /* NicoNicoAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FDEFC7E205E61F2007E7C51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FDEFC61205E61F2007E7C51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FDEFC68205E61F2007E7C51;
+			remoteInfo = NicoNicoApp;
+		};
+		8FDEFC89205E61F2007E7C51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FDEFC61205E61F2007E7C51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FDEFC68205E61F2007E7C51;
+			remoteInfo = NicoNicoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FDEFC69205E61F2007E7C51 /* NicoNicoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicoNicoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FDEFC6C205E61F2007E7C51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FDEFC6E205E61F2007E7C51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FDEFC71205E61F2007E7C51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FDEFC73205E61F2007E7C51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FDEFC76205E61F2007E7C51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FDEFC78205E61F2007E7C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FDEFC7D205E61F2007E7C51 /* NicoNicoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoNicoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FDEFC81205E61F2007E7C51 /* NicoNicoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoNicoAppTests.swift; sourceTree = "<group>"; };
+		8FDEFC83205E61F2007E7C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FDEFC88205E61F2007E7C51 /* NicoNicoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoNicoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FDEFC8C205E61F2007E7C51 /* NicoNicoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoNicoAppUITests.swift; sourceTree = "<group>"; };
+		8FDEFC8E205E61F2007E7C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FDEFC66205E61F2007E7C51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDEFC7A205E61F2007E7C51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDEFC85205E61F2007E7C51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FDEFC60205E61F2007E7C51 = {
+			isa = PBXGroup;
+			children = (
+				8FDEFC6B205E61F2007E7C51 /* NicoNicoApp */,
+				8FDEFC80205E61F2007E7C51 /* NicoNicoAppTests */,
+				8FDEFC8B205E61F2007E7C51 /* NicoNicoAppUITests */,
+				8FDEFC6A205E61F2007E7C51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FDEFC6A205E61F2007E7C51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FDEFC69205E61F2007E7C51 /* NicoNicoApp.app */,
+				8FDEFC7D205E61F2007E7C51 /* NicoNicoAppTests.xctest */,
+				8FDEFC88205E61F2007E7C51 /* NicoNicoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FDEFC6B205E61F2007E7C51 /* NicoNicoApp */ = {
+			isa = PBXGroup;
+			children = (
+				8FDEFC6C205E61F2007E7C51 /* AppDelegate.swift */,
+				8FDEFC6E205E61F2007E7C51 /* ViewController.swift */,
+				8FDEFC70205E61F2007E7C51 /* Main.storyboard */,
+				8FDEFC73205E61F2007E7C51 /* Assets.xcassets */,
+				8FDEFC75205E61F2007E7C51 /* LaunchScreen.storyboard */,
+				8FDEFC78205E61F2007E7C51 /* Info.plist */,
+			);
+			path = NicoNicoApp;
+			sourceTree = "<group>";
+		};
+		8FDEFC80205E61F2007E7C51 /* NicoNicoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FDEFC81205E61F2007E7C51 /* NicoNicoAppTests.swift */,
+				8FDEFC83205E61F2007E7C51 /* Info.plist */,
+			);
+			path = NicoNicoAppTests;
+			sourceTree = "<group>";
+		};
+		8FDEFC8B205E61F2007E7C51 /* NicoNicoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FDEFC8C205E61F2007E7C51 /* NicoNicoAppUITests.swift */,
+				8FDEFC8E205E61F2007E7C51 /* Info.plist */,
+			);
+			path = NicoNicoAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FDEFC68205E61F2007E7C51 /* NicoNicoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FDEFC91205E61F2007E7C51 /* Build configuration list for PBXNativeTarget "NicoNicoApp" */;
+			buildPhases = (
+				8FDEFC65205E61F2007E7C51 /* Sources */,
+				8FDEFC66205E61F2007E7C51 /* Frameworks */,
+				8FDEFC67205E61F2007E7C51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NicoNicoApp;
+			productName = NicoNicoApp;
+			productReference = 8FDEFC69205E61F2007E7C51 /* NicoNicoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FDEFC7C205E61F2007E7C51 /* NicoNicoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FDEFC94205E61F2007E7C51 /* Build configuration list for PBXNativeTarget "NicoNicoAppTests" */;
+			buildPhases = (
+				8FDEFC79205E61F2007E7C51 /* Sources */,
+				8FDEFC7A205E61F2007E7C51 /* Frameworks */,
+				8FDEFC7B205E61F2007E7C51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FDEFC7F205E61F2007E7C51 /* PBXTargetDependency */,
+			);
+			name = NicoNicoAppTests;
+			productName = NicoNicoAppTests;
+			productReference = 8FDEFC7D205E61F2007E7C51 /* NicoNicoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FDEFC87205E61F2007E7C51 /* NicoNicoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FDEFC97205E61F2007E7C51 /* Build configuration list for PBXNativeTarget "NicoNicoAppUITests" */;
+			buildPhases = (
+				8FDEFC84205E61F2007E7C51 /* Sources */,
+				8FDEFC85205E61F2007E7C51 /* Frameworks */,
+				8FDEFC86205E61F2007E7C51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FDEFC8A205E61F2007E7C51 /* PBXTargetDependency */,
+			);
+			name = NicoNicoAppUITests;
+			productName = NicoNicoAppUITests;
+			productReference = 8FDEFC88205E61F2007E7C51 /* NicoNicoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FDEFC61205E61F2007E7C51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Ryosuke Umeki";
+				TargetAttributes = {
+					8FDEFC68205E61F2007E7C51 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8FDEFC7C205E61F2007E7C51 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8FDEFC68205E61F2007E7C51;
+					};
+					8FDEFC87205E61F2007E7C51 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8FDEFC68205E61F2007E7C51;
+					};
+				};
+			};
+			buildConfigurationList = 8FDEFC64205E61F2007E7C51 /* Build configuration list for PBXProject "NicoNicoApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FDEFC60205E61F2007E7C51;
+			productRefGroup = 8FDEFC6A205E61F2007E7C51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FDEFC68205E61F2007E7C51 /* NicoNicoApp */,
+				8FDEFC7C205E61F2007E7C51 /* NicoNicoAppTests */,
+				8FDEFC87205E61F2007E7C51 /* NicoNicoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FDEFC67205E61F2007E7C51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDEFC77205E61F2007E7C51 /* LaunchScreen.storyboard in Resources */,
+				8FDEFC74205E61F2007E7C51 /* Assets.xcassets in Resources */,
+				8FDEFC72205E61F2007E7C51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDEFC7B205E61F2007E7C51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDEFC86205E61F2007E7C51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FDEFC65205E61F2007E7C51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDEFC6F205E61F2007E7C51 /* ViewController.swift in Sources */,
+				8FDEFC6D205E61F2007E7C51 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDEFC79205E61F2007E7C51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDEFC82205E61F2007E7C51 /* NicoNicoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDEFC84205E61F2007E7C51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDEFC8D205E61F2007E7C51 /* NicoNicoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FDEFC7F205E61F2007E7C51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FDEFC68205E61F2007E7C51 /* NicoNicoApp */;
+			targetProxy = 8FDEFC7E205E61F2007E7C51 /* PBXContainerItemProxy */;
+		};
+		8FDEFC8A205E61F2007E7C51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FDEFC68205E61F2007E7C51 /* NicoNicoApp */;
+			targetProxy = 8FDEFC89205E61F2007E7C51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FDEFC70205E61F2007E7C51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FDEFC71205E61F2007E7C51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FDEFC75205E61F2007E7C51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FDEFC76205E61F2007E7C51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FDEFC8F205E61F2007E7C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FDEFC90205E61F2007E7C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FDEFC92205E61F2007E7C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NicoNicoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = romukey.NicoNicoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FDEFC93205E61F2007E7C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NicoNicoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = romukey.NicoNicoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8FDEFC95205E61F2007E7C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NicoNicoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = romukey.NicoNicoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NicoNicoApp.app/NicoNicoApp";
+			};
+			name = Debug;
+		};
+		8FDEFC96205E61F2007E7C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NicoNicoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = romukey.NicoNicoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NicoNicoApp.app/NicoNicoApp";
+			};
+			name = Release;
+		};
+		8FDEFC98205E61F2007E7C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NicoNicoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = romukey.NicoNicoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NicoNicoApp;
+			};
+			name = Debug;
+		};
+		8FDEFC99205E61F2007E7C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NicoNicoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = romukey.NicoNicoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NicoNicoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FDEFC64205E61F2007E7C51 /* Build configuration list for PBXProject "NicoNicoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FDEFC8F205E61F2007E7C51 /* Debug */,
+				8FDEFC90205E61F2007E7C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FDEFC91205E61F2007E7C51 /* Build configuration list for PBXNativeTarget "NicoNicoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FDEFC92205E61F2007E7C51 /* Debug */,
+				8FDEFC93205E61F2007E7C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FDEFC94205E61F2007E7C51 /* Build configuration list for PBXNativeTarget "NicoNicoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FDEFC95205E61F2007E7C51 /* Debug */,
+				8FDEFC96205E61F2007E7C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FDEFC97205E61F2007E7C51 /* Build configuration list for PBXNativeTarget "NicoNicoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FDEFC98205E61F2007E7C51 /* Debug */,
+				8FDEFC99205E61F2007E7C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FDEFC61205E61F2007E7C51 /* Project object */;
+}
