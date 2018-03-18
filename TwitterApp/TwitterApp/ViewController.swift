@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     var backTweetView: UIView!
+    var textField: UITextField!
+    var textView: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,24 +25,25 @@ class ViewController: UIViewController {
     }
 
     //-------------TableViewの処理------------------
-
     
+    
+    //-------------ボタンがタップされた時の処理----------
     @IBAction func tapButton(_ sender: UIButton) {
-        backTweetView = self.makeBackTweetView()
+        self.backTweetView = self.makeBackTweetView()
         self.view.addSubview(backTweetView)
         
         let tweetView = self.makeTweetView()
         backTweetView.addSubview(tweetView)
         
-        let textField = self.makeTextField()
+        self.textField = self.makeTextField()
         tweetView.addSubview(textField)
         
-        let textView = self.makeTextView()
+        self.textView = self.makeTextView()
         tweetView.addSubview(textView)
         
         let nameLabel = self.makeLabel(text: "名前", y: 5)
         tweetView.addSubview(nameLabel)
-
+        
         let tweetLabel = self.makeLabel(text: "ツイート内容", y: 85)
         tweetView.addSubview(tweetLabel)
         
@@ -51,6 +54,23 @@ class ViewController: UIViewController {
         tweetView.addSubview(submitBtn)
     }
 
+
+    @objc func tappedCancelBtn(_: AnyObject){
+        self.backTweetView.removeFromSuperview()
+        self.textField.text = ""
+        self.textView.text = ""
+    }
+    
+    @objc func tappedSubmitBtn(_ sender :AnyObject){
+        let name = self.textField.text!
+        let tweet = self.textView.text!
+        
+        print("名前:\(name)、ツイート内容:\(tweet)")
+        self.backTweetView.removeFromSuperview()
+        textField.text = ""
+        textView.text = ""
+    }
+    
     //-------------部品の生成のための処理--------------
     func makeBackTweetView() -> UIView{
         let backTweetView = UIView()
@@ -115,12 +135,9 @@ class ViewController: UIViewController {
         submitBtn.backgroundColor = UIColor(red: 0.14, green: 0.3, blue: 0.68, alpha: 1.0)
         submitBtn.setTitleColor(UIColor.gray, for: UIControlState.highlighted)
         submitBtn.layer.cornerRadius = 7
+        submitBtn.addTarget(self, action: #selector(self.tappedSubmitBtn(_:)), for:.touchUpInside)
         return submitBtn
     }
-    
-    //-------------ボタンがタップされた時の処理----------
-    @objc func tappedCancelBtn(_: AnyObject){
-        backTweetView.removeFromSuperview()
-    }
+
 }
 
