@@ -29,8 +29,15 @@ class ViewController: UIViewController {
         
         let tweetView = self.makeTweetView()
         backTweetView.addSubview(tweetView)
+        
+        let textField = self.makeTextField()
+        tweetView.addSubview(textField)
+        
+        let textView = self.makeTextView()
+        tweetView.addSubview(textView)
+        
     }
-    
+
     //-------------部品の生成のための処理--------------
     func makeBackTweetView() -> UIView{
         let backTweetView = UIView()
@@ -48,6 +55,24 @@ class ViewController: UIViewController {
         tweetView.layer.shadowOpacity = 0.3
         tweetView.layer.cornerRadius = 3
         return tweetView
+    }
+    
+    func makeTextField() -> UITextField {
+        let textField = UITextField()
+        textField.frame = CGRect(x:10, y: 40, width: 280, height: 40)
+        textField.font = UIFont(name: "HiraKakuProN-W6", size: 15)
+        textField.borderStyle = UITextBorderStyle.roundedRect
+        return textField
+    }
+    
+    func makeTextView() -> UITextView {
+        let textView = UITextView()
+        textView.frame = CGRect(x: 10, y: 120, width: 280, height: 110)
+        textView.font = UIFont(name: "HiraKakuProN-W6", size: 15)
+        textView.layer.cornerRadius = 8
+        textView.layer.borderColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0).cgColor
+        textView.layer.borderWidth = 1
+        return textView
     }
 }
 
