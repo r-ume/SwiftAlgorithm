@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var commentTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        commentTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +24,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func tapSubmitButton(_ sender: UIButton) {
+        commentTextField.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        commentTextField.resignFirstResponder()
+        return true
+    }
+    
 }
 
