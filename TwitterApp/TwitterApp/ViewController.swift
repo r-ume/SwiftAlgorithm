@@ -24,6 +24,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
+        self.tableView.estimatedRowHeight = 78
         self.tableView.rowHeight = UITableViewAutomaticDimension
     }
 
@@ -36,6 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tweetArray.count
     }
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 85
@@ -52,6 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let textLabel = cell.viewWithTag(2) as! UILabel
         textLabel.text = tweet["text"]
         textLabel.font = UIFont(name: "HirakakuProN-W6", size: 18)
+        textLabel.numberOfLines = 0
 
         let timeLabel = cell.viewWithTag(3) as! UILabel
         timeLabel.text = tweet["time"]
