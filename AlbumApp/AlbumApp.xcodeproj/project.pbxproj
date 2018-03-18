@@ -7,66 +7,124 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F65E6FB205E524C0045947E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F65E6FA205E524C0045947E /* AppDelegate.swift */; };
-		8F65E6FD205E524C0045947E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F65E6FC205E524C0045947E /* ViewController.swift */; };
-		8F65E700205E524C0045947E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F65E6FE205E524C0045947E /* Main.storyboard */; };
-		8F65E702205E524C0045947E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F65E701205E524C0045947E /* Assets.xcassets */; };
-		8F65E705205E524C0045947E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F65E703205E524C0045947E /* LaunchScreen.storyboard */; };
-		8F65E710205E524C0045947E /* AlbumAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F65E70F205E524C0045947E /* AlbumAppTests.swift */; };
-		8F65E71B205E524C0045947E /* AlbumAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F65E71A205E524C0045947E /* AlbumAppUITests.swift */; };
-		8F65E729205E52870045947E /* AlbumAppImages in Resources */ = {isa = PBXBuildFile; fileRef = 8F65E728205E52870045947E /* AlbumAppImages */; };
+		8F13408D205E5B21005F4C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F13408C205E5B21005F4C7F /* AppDelegate.swift */; };
+		8F13408F205E5B21005F4C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F13408E205E5B21005F4C7F /* ViewController.swift */; };
+		8F134092205E5B21005F4C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F134090205E5B21005F4C7F /* Main.storyboard */; };
+		8F134094205E5B21005F4C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F134093205E5B21005F4C7F /* Assets.xcassets */; };
+		8F134097205E5B21005F4C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F134095205E5B21005F4C7F /* LaunchScreen.storyboard */; };
+		8F1340A2205E5B21005F4C7F /* AlbumAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1340A1205E5B21005F4C7F /* AlbumAppTests.swift */; };
+		8F1340AD205E5B21005F4C7F /* AlbumAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1340AC205E5B21005F4C7F /* AlbumAppUITests.swift */; };
+		8F134116205E5B46005F4C7F /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1340F8205E5B46005F4C7F /* 8.png */; };
+		8F134117205E5B46005F4C7F /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1340F9205E5B46005F4C7F /* 9.png */; };
+		8F134118205E5B46005F4C7F /* 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1340FA205E5B46005F4C7F /* 14.png */; };
+		8F134119205E5B46005F4C7F /* 28.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1340FB205E5B46005F4C7F /* 28.png */; };
+		8F13411A205E5B46005F4C7F /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1340FC205E5B46005F4C7F /* 29.png */; };
+		8F13411B205E5B46005F4C7F /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1340FD205E5B46005F4C7F /* 15.png */; };
+		8F13411C205E5B46005F4C7F /* 17.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1340FE205E5B46005F4C7F /* 17.png */; };
+		8F13411D205E5B46005F4C7F /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1340FF205E5B46005F4C7F /* 16.png */; };
+		8F13411E205E5B46005F4C7F /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134100205E5B46005F4C7F /* 12.png */; };
+		8F13411F205E5B46005F4C7F /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134101205E5B46005F4C7F /* 13.png */; };
+		8F134120205E5B46005F4C7F /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134102205E5B46005F4C7F /* 11.png */; };
+		8F134121205E5B46005F4C7F /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134103205E5B46005F4C7F /* 10.png */; };
+		8F134122205E5B46005F4C7F /* 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134104205E5B46005F4C7F /* 21.png */; };
+		8F134123205E5B46005F4C7F /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134105205E5B46005F4C7F /* 20.png */; };
+		8F134124205E5B46005F4C7F /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134106205E5B46005F4C7F /* 22.png */; };
+		8F134125205E5B46005F4C7F /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134107205E5B46005F4C7F /* 23.png */; };
+		8F134126205E5B46005F4C7F /* 27.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134108205E5B46005F4C7F /* 27.png */; };
+		8F134127205E5B46005F4C7F /* 26.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134109205E5B46005F4C7F /* 26.png */; };
+		8F134128205E5B46005F4C7F /* 18.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F13410A205E5B46005F4C7F /* 18.png */; };
+		8F134129205E5B46005F4C7F /* 30.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F13410B205E5B46005F4C7F /* 30.png */; };
+		8F13412A205E5B46005F4C7F /* 24.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F13410C205E5B46005F4C7F /* 24.png */; };
+		8F13412B205E5B46005F4C7F /* 25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F13410D205E5B46005F4C7F /* 25.png */; };
+		8F13412C205E5B46005F4C7F /* 19.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F13410E205E5B46005F4C7F /* 19.png */; };
+		8F13412D205E5B46005F4C7F /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F13410F205E5B46005F4C7F /* 4.png */; };
+		8F13412E205E5B46005F4C7F /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134110205E5B46005F4C7F /* 5.png */; };
+		8F13412F205E5B46005F4C7F /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134111205E5B46005F4C7F /* 7.png */; };
+		8F134130205E5B46005F4C7F /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134112205E5B46005F4C7F /* 6.png */; };
+		8F134131205E5B46005F4C7F /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134113205E5B46005F4C7F /* 2.png */; };
+		8F134132205E5B46005F4C7F /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134114205E5B46005F4C7F /* 3.png */; };
+		8F134133205E5B46005F4C7F /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F134115205E5B46005F4C7F /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8F65E70C205E524C0045947E /* PBXContainerItemProxy */ = {
+		8F13409E205E5B21005F4C7F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8F65E6EF205E524C0045947E /* Project object */;
+			containerPortal = 8F134081205E5B20005F4C7F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8F65E6F6205E524C0045947E;
+			remoteGlobalIDString = 8F134088205E5B21005F4C7F;
 			remoteInfo = AlbumApp;
 		};
-		8F65E717205E524C0045947E /* PBXContainerItemProxy */ = {
+		8F1340A9205E5B21005F4C7F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8F65E6EF205E524C0045947E /* Project object */;
+			containerPortal = 8F134081205E5B20005F4C7F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8F65E6F6205E524C0045947E;
+			remoteGlobalIDString = 8F134088205E5B21005F4C7F;
 			remoteInfo = AlbumApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8F65E6F7205E524C0045947E /* AlbumApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F65E6FA205E524C0045947E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F65E6FC205E524C0045947E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8F65E6FF205E524C0045947E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8F65E701205E524C0045947E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8F65E704205E524C0045947E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8F65E706205E524C0045947E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F65E70B205E524C0045947E /* AlbumAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F65E70F205E524C0045947E /* AlbumAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumAppTests.swift; sourceTree = "<group>"; };
-		8F65E711205E524C0045947E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F65E716205E524C0045947E /* AlbumAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F65E71A205E524C0045947E /* AlbumAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumAppUITests.swift; sourceTree = "<group>"; };
-		8F65E71C205E524C0045947E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F65E728205E52870045947E /* AlbumAppImages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AlbumAppImages; path = ../../../../Downloads/AlbumAppImages; sourceTree = "<group>"; };
+		8F134089205E5B21005F4C7F /* AlbumApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F13408C205E5B21005F4C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F13408E205E5B21005F4C7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F134091205E5B21005F4C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F134093205E5B21005F4C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F134096205E5B21005F4C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F134098205E5B21005F4C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F13409D205E5B21005F4C7F /* AlbumAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1340A1205E5B21005F4C7F /* AlbumAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumAppTests.swift; sourceTree = "<group>"; };
+		8F1340A3205E5B21005F4C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F1340A8205E5B21005F4C7F /* AlbumAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1340AC205E5B21005F4C7F /* AlbumAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumAppUITests.swift; sourceTree = "<group>"; };
+		8F1340AE205E5B21005F4C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F1340F8205E5B46005F4C7F /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		8F1340F9205E5B46005F4C7F /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		8F1340FA205E5B46005F4C7F /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
+		8F1340FB205E5B46005F4C7F /* 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 28.png; sourceTree = "<group>"; };
+		8F1340FC205E5B46005F4C7F /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
+		8F1340FD205E5B46005F4C7F /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
+		8F1340FE205E5B46005F4C7F /* 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 17.png; sourceTree = "<group>"; };
+		8F1340FF205E5B46005F4C7F /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		8F134100205E5B46005F4C7F /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		8F134101205E5B46005F4C7F /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
+		8F134102205E5B46005F4C7F /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		8F134103205E5B46005F4C7F /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		8F134104205E5B46005F4C7F /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.png; sourceTree = "<group>"; };
+		8F134105205E5B46005F4C7F /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		8F134106205E5B46005F4C7F /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
+		8F134107205E5B46005F4C7F /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
+		8F134108205E5B46005F4C7F /* 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 27.png; sourceTree = "<group>"; };
+		8F134109205E5B46005F4C7F /* 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26.png; sourceTree = "<group>"; };
+		8F13410A205E5B46005F4C7F /* 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 18.png; sourceTree = "<group>"; };
+		8F13410B205E5B46005F4C7F /* 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 30.png; sourceTree = "<group>"; };
+		8F13410C205E5B46005F4C7F /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
+		8F13410D205E5B46005F4C7F /* 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25.png; sourceTree = "<group>"; };
+		8F13410E205E5B46005F4C7F /* 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 19.png; sourceTree = "<group>"; };
+		8F13410F205E5B46005F4C7F /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		8F134110205E5B46005F4C7F /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		8F134111205E5B46005F4C7F /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		8F134112205E5B46005F4C7F /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		8F134113205E5B46005F4C7F /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		8F134114205E5B46005F4C7F /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		8F134115205E5B46005F4C7F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8F65E6F4205E524C0045947E /* Frameworks */ = {
+		8F134086205E5B21005F4C7F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F65E708205E524C0045947E /* Frameworks */ = {
+		8F13409A205E5B21005F4C7F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F65E713205E524C0045947E /* Frameworks */ = {
+		8F1340A5205E5B21005F4C7F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,68 +134,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8F65E6EE205E524C0045947E = {
+		8F134080205E5B20005F4C7F = {
 			isa = PBXGroup;
 			children = (
-				8F65E728205E52870045947E /* AlbumAppImages */,
-				8F65E6F9205E524C0045947E /* AlbumApp */,
-				8F65E70E205E524C0045947E /* AlbumAppTests */,
-				8F65E719205E524C0045947E /* AlbumAppUITests */,
-				8F65E6F8205E524C0045947E /* Products */,
+				8F1340F7205E5B46005F4C7F /* AlbumAppImages */,
+				8F13408B205E5B21005F4C7F /* AlbumApp */,
+				8F1340A0205E5B21005F4C7F /* AlbumAppTests */,
+				8F1340AB205E5B21005F4C7F /* AlbumAppUITests */,
+				8F13408A205E5B21005F4C7F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8F65E6F8205E524C0045947E /* Products */ = {
+		8F13408A205E5B21005F4C7F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F65E6F7205E524C0045947E /* AlbumApp.app */,
-				8F65E70B205E524C0045947E /* AlbumAppTests.xctest */,
-				8F65E716205E524C0045947E /* AlbumAppUITests.xctest */,
+				8F134089205E5B21005F4C7F /* AlbumApp.app */,
+				8F13409D205E5B21005F4C7F /* AlbumAppTests.xctest */,
+				8F1340A8205E5B21005F4C7F /* AlbumAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8F65E6F9205E524C0045947E /* AlbumApp */ = {
+		8F13408B205E5B21005F4C7F /* AlbumApp */ = {
 			isa = PBXGroup;
 			children = (
-				8F65E6FA205E524C0045947E /* AppDelegate.swift */,
-				8F65E6FC205E524C0045947E /* ViewController.swift */,
-				8F65E6FE205E524C0045947E /* Main.storyboard */,
-				8F65E701205E524C0045947E /* Assets.xcassets */,
-				8F65E703205E524C0045947E /* LaunchScreen.storyboard */,
-				8F65E706205E524C0045947E /* Info.plist */,
+				8F13408C205E5B21005F4C7F /* AppDelegate.swift */,
+				8F13408E205E5B21005F4C7F /* ViewController.swift */,
+				8F134090205E5B21005F4C7F /* Main.storyboard */,
+				8F134093205E5B21005F4C7F /* Assets.xcassets */,
+				8F134095205E5B21005F4C7F /* LaunchScreen.storyboard */,
+				8F134098205E5B21005F4C7F /* Info.plist */,
 			);
 			path = AlbumApp;
 			sourceTree = "<group>";
 		};
-		8F65E70E205E524C0045947E /* AlbumAppTests */ = {
+		8F1340A0205E5B21005F4C7F /* AlbumAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				8F65E70F205E524C0045947E /* AlbumAppTests.swift */,
-				8F65E711205E524C0045947E /* Info.plist */,
+				8F1340A1205E5B21005F4C7F /* AlbumAppTests.swift */,
+				8F1340A3205E5B21005F4C7F /* Info.plist */,
 			);
 			path = AlbumAppTests;
 			sourceTree = "<group>";
 		};
-		8F65E719205E524C0045947E /* AlbumAppUITests */ = {
+		8F1340AB205E5B21005F4C7F /* AlbumAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8F65E71A205E524C0045947E /* AlbumAppUITests.swift */,
-				8F65E71C205E524C0045947E /* Info.plist */,
+				8F1340AC205E5B21005F4C7F /* AlbumAppUITests.swift */,
+				8F1340AE205E5B21005F4C7F /* Info.plist */,
 			);
 			path = AlbumAppUITests;
+			sourceTree = "<group>";
+		};
+		8F1340F7205E5B46005F4C7F /* AlbumAppImages */ = {
+			isa = PBXGroup;
+			children = (
+				8F1340F8205E5B46005F4C7F /* 8.png */,
+				8F1340F9205E5B46005F4C7F /* 9.png */,
+				8F1340FA205E5B46005F4C7F /* 14.png */,
+				8F1340FB205E5B46005F4C7F /* 28.png */,
+				8F1340FC205E5B46005F4C7F /* 29.png */,
+				8F1340FD205E5B46005F4C7F /* 15.png */,
+				8F1340FE205E5B46005F4C7F /* 17.png */,
+				8F1340FF205E5B46005F4C7F /* 16.png */,
+				8F134100205E5B46005F4C7F /* 12.png */,
+				8F134101205E5B46005F4C7F /* 13.png */,
+				8F134102205E5B46005F4C7F /* 11.png */,
+				8F134103205E5B46005F4C7F /* 10.png */,
+				8F134104205E5B46005F4C7F /* 21.png */,
+				8F134105205E5B46005F4C7F /* 20.png */,
+				8F134106205E5B46005F4C7F /* 22.png */,
+				8F134107205E5B46005F4C7F /* 23.png */,
+				8F134108205E5B46005F4C7F /* 27.png */,
+				8F134109205E5B46005F4C7F /* 26.png */,
+				8F13410A205E5B46005F4C7F /* 18.png */,
+				8F13410B205E5B46005F4C7F /* 30.png */,
+				8F13410C205E5B46005F4C7F /* 24.png */,
+				8F13410D205E5B46005F4C7F /* 25.png */,
+				8F13410E205E5B46005F4C7F /* 19.png */,
+				8F13410F205E5B46005F4C7F /* 4.png */,
+				8F134110205E5B46005F4C7F /* 5.png */,
+				8F134111205E5B46005F4C7F /* 7.png */,
+				8F134112205E5B46005F4C7F /* 6.png */,
+				8F134113205E5B46005F4C7F /* 2.png */,
+				8F134114205E5B46005F4C7F /* 3.png */,
+				8F134115205E5B46005F4C7F /* 1.png */,
+			);
+			name = AlbumAppImages;
+			path = ../../../../Downloads/AlbumAppImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F65E6F6205E524C0045947E /* AlbumApp */ = {
+		8F134088205E5B21005F4C7F /* AlbumApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F65E71F205E524C0045947E /* Build configuration list for PBXNativeTarget "AlbumApp" */;
+			buildConfigurationList = 8F1340B1205E5B21005F4C7F /* Build configuration list for PBXNativeTarget "AlbumApp" */;
 			buildPhases = (
-				8F65E6F3205E524C0045947E /* Sources */,
-				8F65E6F4205E524C0045947E /* Frameworks */,
-				8F65E6F5205E524C0045947E /* Resources */,
+				8F134085205E5B21005F4C7F /* Sources */,
+				8F134086205E5B21005F4C7F /* Frameworks */,
+				8F134087205E5B21005F4C7F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -145,72 +241,72 @@
 			);
 			name = AlbumApp;
 			productName = AlbumApp;
-			productReference = 8F65E6F7205E524C0045947E /* AlbumApp.app */;
+			productReference = 8F134089205E5B21005F4C7F /* AlbumApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8F65E70A205E524C0045947E /* AlbumAppTests */ = {
+		8F13409C205E5B21005F4C7F /* AlbumAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F65E722205E524C0045947E /* Build configuration list for PBXNativeTarget "AlbumAppTests" */;
+			buildConfigurationList = 8F1340B4205E5B21005F4C7F /* Build configuration list for PBXNativeTarget "AlbumAppTests" */;
 			buildPhases = (
-				8F65E707205E524C0045947E /* Sources */,
-				8F65E708205E524C0045947E /* Frameworks */,
-				8F65E709205E524C0045947E /* Resources */,
+				8F134099205E5B21005F4C7F /* Sources */,
+				8F13409A205E5B21005F4C7F /* Frameworks */,
+				8F13409B205E5B21005F4C7F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8F65E70D205E524C0045947E /* PBXTargetDependency */,
+				8F13409F205E5B21005F4C7F /* PBXTargetDependency */,
 			);
 			name = AlbumAppTests;
 			productName = AlbumAppTests;
-			productReference = 8F65E70B205E524C0045947E /* AlbumAppTests.xctest */;
+			productReference = 8F13409D205E5B21005F4C7F /* AlbumAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8F65E715205E524C0045947E /* AlbumAppUITests */ = {
+		8F1340A7205E5B21005F4C7F /* AlbumAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F65E725205E524C0045947E /* Build configuration list for PBXNativeTarget "AlbumAppUITests" */;
+			buildConfigurationList = 8F1340B7205E5B21005F4C7F /* Build configuration list for PBXNativeTarget "AlbumAppUITests" */;
 			buildPhases = (
-				8F65E712205E524C0045947E /* Sources */,
-				8F65E713205E524C0045947E /* Frameworks */,
-				8F65E714205E524C0045947E /* Resources */,
+				8F1340A4205E5B21005F4C7F /* Sources */,
+				8F1340A5205E5B21005F4C7F /* Frameworks */,
+				8F1340A6205E5B21005F4C7F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8F65E718205E524C0045947E /* PBXTargetDependency */,
+				8F1340AA205E5B21005F4C7F /* PBXTargetDependency */,
 			);
 			name = AlbumAppUITests;
 			productName = AlbumAppUITests;
-			productReference = 8F65E716205E524C0045947E /* AlbumAppUITests.xctest */;
+			productReference = 8F1340A8205E5B21005F4C7F /* AlbumAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8F65E6EF205E524C0045947E /* Project object */ = {
+		8F134081205E5B20005F4C7F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Ryosuke Umeki";
 				TargetAttributes = {
-					8F65E6F6205E524C0045947E = {
+					8F134088205E5B21005F4C7F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					8F65E70A205E524C0045947E = {
+					8F13409C205E5B21005F4C7F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 8F65E6F6205E524C0045947E;
+						TestTargetID = 8F134088205E5B21005F4C7F;
 					};
-					8F65E715205E524C0045947E = {
+					8F1340A7205E5B21005F4C7F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 8F65E6F6205E524C0045947E;
+						TestTargetID = 8F134088205E5B21005F4C7F;
 					};
 				};
 			};
-			buildConfigurationList = 8F65E6F2205E524C0045947E /* Build configuration list for PBXProject "AlbumApp" */;
+			buildConfigurationList = 8F134084205E5B20005F4C7F /* Build configuration list for PBXProject "AlbumApp" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,38 +314,67 @@
 				en,
 				Base,
 			);
-			mainGroup = 8F65E6EE205E524C0045947E;
-			productRefGroup = 8F65E6F8205E524C0045947E /* Products */;
+			mainGroup = 8F134080205E5B20005F4C7F;
+			productRefGroup = 8F13408A205E5B21005F4C7F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F65E6F6205E524C0045947E /* AlbumApp */,
-				8F65E70A205E524C0045947E /* AlbumAppTests */,
-				8F65E715205E524C0045947E /* AlbumAppUITests */,
+				8F134088205E5B21005F4C7F /* AlbumApp */,
+				8F13409C205E5B21005F4C7F /* AlbumAppTests */,
+				8F1340A7205E5B21005F4C7F /* AlbumAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8F65E6F5205E524C0045947E /* Resources */ = {
+		8F134087205E5B21005F4C7F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F65E705205E524C0045947E /* LaunchScreen.storyboard in Resources */,
-				8F65E702205E524C0045947E /* Assets.xcassets in Resources */,
-				8F65E729205E52870045947E /* AlbumAppImages in Resources */,
-				8F65E700205E524C0045947E /* Main.storyboard in Resources */,
+				8F134133205E5B46005F4C7F /* 1.png in Resources */,
+				8F13411F205E5B46005F4C7F /* 13.png in Resources */,
+				8F13411E205E5B46005F4C7F /* 12.png in Resources */,
+				8F13411B205E5B46005F4C7F /* 15.png in Resources */,
+				8F134127205E5B46005F4C7F /* 26.png in Resources */,
+				8F134116205E5B46005F4C7F /* 8.png in Resources */,
+				8F13412B205E5B46005F4C7F /* 25.png in Resources */,
+				8F134097205E5B21005F4C7F /* LaunchScreen.storyboard in Resources */,
+				8F134121205E5B46005F4C7F /* 10.png in Resources */,
+				8F134131205E5B46005F4C7F /* 2.png in Resources */,
+				8F134120205E5B46005F4C7F /* 11.png in Resources */,
+				8F13412D205E5B46005F4C7F /* 4.png in Resources */,
+				8F134132205E5B46005F4C7F /* 3.png in Resources */,
+				8F134124205E5B46005F4C7F /* 22.png in Resources */,
+				8F134094205E5B21005F4C7F /* Assets.xcassets in Resources */,
+				8F134117205E5B46005F4C7F /* 9.png in Resources */,
+				8F134126205E5B46005F4C7F /* 27.png in Resources */,
+				8F13412C205E5B46005F4C7F /* 19.png in Resources */,
+				8F134128205E5B46005F4C7F /* 18.png in Resources */,
+				8F13411C205E5B46005F4C7F /* 17.png in Resources */,
+				8F134123205E5B46005F4C7F /* 20.png in Resources */,
+				8F13412F205E5B46005F4C7F /* 7.png in Resources */,
+				8F13411A205E5B46005F4C7F /* 29.png in Resources */,
+				8F134129205E5B46005F4C7F /* 30.png in Resources */,
+				8F13411D205E5B46005F4C7F /* 16.png in Resources */,
+				8F134125205E5B46005F4C7F /* 23.png in Resources */,
+				8F134122205E5B46005F4C7F /* 21.png in Resources */,
+				8F134130205E5B46005F4C7F /* 6.png in Resources */,
+				8F134119205E5B46005F4C7F /* 28.png in Resources */,
+				8F134118205E5B46005F4C7F /* 14.png in Resources */,
+				8F13412E205E5B46005F4C7F /* 5.png in Resources */,
+				8F134092205E5B21005F4C7F /* Main.storyboard in Resources */,
+				8F13412A205E5B46005F4C7F /* 24.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F65E709205E524C0045947E /* Resources */ = {
+		8F13409B205E5B21005F4C7F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F65E714205E524C0045947E /* Resources */ = {
+		8F1340A6205E5B21005F4C7F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,59 +384,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8F65E6F3205E524C0045947E /* Sources */ = {
+		8F134085205E5B21005F4C7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F65E6FD205E524C0045947E /* ViewController.swift in Sources */,
-				8F65E6FB205E524C0045947E /* AppDelegate.swift in Sources */,
+				8F13408F205E5B21005F4C7F /* ViewController.swift in Sources */,
+				8F13408D205E5B21005F4C7F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F65E707205E524C0045947E /* Sources */ = {
+		8F134099205E5B21005F4C7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F65E710205E524C0045947E /* AlbumAppTests.swift in Sources */,
+				8F1340A2205E5B21005F4C7F /* AlbumAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F65E712205E524C0045947E /* Sources */ = {
+		8F1340A4205E5B21005F4C7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F65E71B205E524C0045947E /* AlbumAppUITests.swift in Sources */,
+				8F1340AD205E5B21005F4C7F /* AlbumAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8F65E70D205E524C0045947E /* PBXTargetDependency */ = {
+		8F13409F205E5B21005F4C7F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8F65E6F6205E524C0045947E /* AlbumApp */;
-			targetProxy = 8F65E70C205E524C0045947E /* PBXContainerItemProxy */;
+			target = 8F134088205E5B21005F4C7F /* AlbumApp */;
+			targetProxy = 8F13409E205E5B21005F4C7F /* PBXContainerItemProxy */;
 		};
-		8F65E718205E524C0045947E /* PBXTargetDependency */ = {
+		8F1340AA205E5B21005F4C7F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8F65E6F6205E524C0045947E /* AlbumApp */;
-			targetProxy = 8F65E717205E524C0045947E /* PBXContainerItemProxy */;
+			target = 8F134088205E5B21005F4C7F /* AlbumApp */;
+			targetProxy = 8F1340A9205E5B21005F4C7F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8F65E6FE205E524C0045947E /* Main.storyboard */ = {
+		8F134090205E5B21005F4C7F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8F65E6FF205E524C0045947E /* Base */,
+				8F134091205E5B21005F4C7F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8F65E703205E524C0045947E /* LaunchScreen.storyboard */ = {
+		8F134095205E5B21005F4C7F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8F65E704205E524C0045947E /* Base */,
+				8F134096205E5B21005F4C7F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -319,7 +444,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8F65E71D205E524C0045947E /* Debug */ = {
+		8F1340AF205E5B21005F4C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +501,7 @@
 			};
 			name = Debug;
 		};
-		8F65E71E205E524C0045947E /* Release */ = {
+		8F1340B0205E5B21005F4C7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -426,7 +551,7 @@
 			};
 			name = Release;
 		};
-		8F65E720205E524C0045947E /* Debug */ = {
+		8F1340B2205E5B21005F4C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -440,7 +565,7 @@
 			};
 			name = Debug;
 		};
-		8F65E721205E524C0045947E /* Release */ = {
+		8F1340B3205E5B21005F4C7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -454,7 +579,7 @@
 			};
 			name = Release;
 		};
-		8F65E723205E524C0045947E /* Debug */ = {
+		8F1340B5205E5B21005F4C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -470,7 +595,7 @@
 			};
 			name = Debug;
 		};
-		8F65E724205E524C0045947E /* Release */ = {
+		8F1340B6205E5B21005F4C7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -486,7 +611,7 @@
 			};
 			name = Release;
 		};
-		8F65E726205E524C0045947E /* Debug */ = {
+		8F1340B8205E5B21005F4C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -501,7 +626,7 @@
 			};
 			name = Debug;
 		};
-		8F65E727205E524C0045947E /* Release */ = {
+		8F1340B9205E5B21005F4C7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -519,43 +644,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8F65E6F2205E524C0045947E /* Build configuration list for PBXProject "AlbumApp" */ = {
+		8F134084205E5B20005F4C7F /* Build configuration list for PBXProject "AlbumApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F65E71D205E524C0045947E /* Debug */,
-				8F65E71E205E524C0045947E /* Release */,
+				8F1340AF205E5B21005F4C7F /* Debug */,
+				8F1340B0205E5B21005F4C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F65E71F205E524C0045947E /* Build configuration list for PBXNativeTarget "AlbumApp" */ = {
+		8F1340B1205E5B21005F4C7F /* Build configuration list for PBXNativeTarget "AlbumApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F65E720205E524C0045947E /* Debug */,
-				8F65E721205E524C0045947E /* Release */,
+				8F1340B2205E5B21005F4C7F /* Debug */,
+				8F1340B3205E5B21005F4C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F65E722205E524C0045947E /* Build configuration list for PBXNativeTarget "AlbumAppTests" */ = {
+		8F1340B4205E5B21005F4C7F /* Build configuration list for PBXNativeTarget "AlbumAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F65E723205E524C0045947E /* Debug */,
-				8F65E724205E524C0045947E /* Release */,
+				8F1340B5205E5B21005F4C7F /* Debug */,
+				8F1340B6205E5B21005F4C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F65E725205E524C0045947E /* Build configuration list for PBXNativeTarget "AlbumAppUITests" */ = {
+		8F1340B7205E5B21005F4C7F /* Build configuration list for PBXNativeTarget "AlbumAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F65E726205E524C0045947E /* Debug */,
-				8F65E727205E524C0045947E /* Release */,
+				8F1340B8205E5B21005F4C7F /* Debug */,
+				8F1340B9205E5B21005F4C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8F65E6EF205E524C0045947E /* Project object */;
+	rootObject = 8F134081205E5B20005F4C7F /* Project object */;
 }
