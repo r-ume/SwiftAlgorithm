@@ -109,7 +109,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var tweetDictionary: Dictionary<String, String> = [:]
         tweetDictionary["name"] = textField.text!
         tweetDictionary["text"] = textView.text
-        tweetDictionary["time"] = self.getToday()
+        tweetDictionary["time"] = self.getCurrentTime()
         tweetArray.insert(tweetDictionary, at: 0)
 
         self.backTweetView.removeFromSuperview()
@@ -187,13 +187,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return submitBtn
     }
     
-    func getToday(format:String = "yyyy/MM/dd HH:mm:ss") -> String {
+    func getCurrentTime() -> String {
         let now = Date()
-        let formatter = DateFormatter()
-        formatter.dateFormat = format
-        return formatter.string(from: now as Date)
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .short
+        dateFormatter.dateStyle = .short
+        let currentTime = dateFormatter.string(from: now as Date)
+        return currentTime
     }
-
-
 }
 
