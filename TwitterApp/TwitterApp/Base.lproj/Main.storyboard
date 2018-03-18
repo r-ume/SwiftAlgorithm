@@ -35,6 +35,9 @@
                                             <constraint firstAttribute="height" constant="20" id="x8Y-6O-FYW"/>
                                         </constraints>
                                         <state key="normal" image="pencil.png"/>
+                                        <connections>
+                                            <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SD2-y7-xk5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
