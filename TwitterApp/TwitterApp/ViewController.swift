@@ -42,6 +42,11 @@ class ViewController: UIViewController {
         let tweetLabel = self.makeLabel(text: "ツイート内容", y: 85)
         tweetView.addSubview(tweetLabel)
         
+        let cancelBtn = makeCancelBtn(tweetView: tweetView)
+        tweetView.addSubview(cancelBtn)
+        
+        let submitBtn = makeSubmitBtn()
+        tweetView.addSubview(submitBtn)
     }
 
     //-------------部品の生成のための処理--------------
@@ -86,6 +91,28 @@ class ViewController: UIViewController {
         label.text = text
         label.font = UIFont(name: "HiraKakuProN-W6", size: 15)
         return label
+    }
+    
+    func makeCancelBtn(tweetView: UIView) -> UIButton {
+        let cancelBtn = UIButton()
+        cancelBtn.frame.size = CGSize(width: 20, height: 20)
+        cancelBtn.center.x = tweetView.frame.width - 15
+        cancelBtn.center.y = 15
+        cancelBtn.setBackgroundImage(UIImage(named: "cancel.png"), for: .normal)
+        cancelBtn.backgroundColor = UIColor(red: 0.14, green: 0.3, blue: 0.68, alpha: 1.0)
+        cancelBtn.layer.cornerRadius = cancelBtn.frame.width / 2
+        return cancelBtn
+    }
+    
+    func makeSubmitBtn() -> UIButton {
+        let submitBtn = UIButton()
+        submitBtn.frame = CGRect(x: 10, y: 250, width: 280,height: 40)
+        submitBtn.setTitle("送信", for: .normal)
+        submitBtn.titleLabel?.font = UIFont(name: "HiraKakuProN-W6", size: 15)
+        submitBtn.backgroundColor = UIColor(red: 0.14, green: 0.3, blue: 0.68, alpha: 1.0)
+        submitBtn.setTitleColor(UIColor.gray, for: UIControlState.highlighted)
+        submitBtn.layer.cornerRadius = 7
+        return submitBtn
     }
 }
 
