@@ -38,7 +38,12 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func tapAction(_ sender: Any) {
+    @IBAction func tapAction(_ sender: UIButton) {
+        firstImageView.image = UIImage(named: "\(arc4random() % 30 + 1).png")
+        secondImageView.image = UIImage(named: "\(arc4random() % 30 + 1).png")
+        thirdImageView.image = UIImage(named: "\(arc4random() % 30 + 1).png")
+        fourthImageView.image = UIImage(named: "\(arc4random() % 30 + 1).png")
+        fifthImageView.image = UIImage(named: "\(arc4random() % 30  + 1).png")
     }
 
 
