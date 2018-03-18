@@ -26,18 +26,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func tapSubmitButton(_ sender: UIButton) {
         commentTextField.resignFirstResponder()
-        
-        let label = UILabel()
-        label.text = commentTextField.text
-        label.frame.origin = CGPoint(x: 130, y: 200)
-        label.font = UIFont(name: "HiraginoSans-W6", size: 20)
-        label.sizeToFit()
-        self.view.addSubview(label)
+        let commentLabel = makeCommentLabel()
+        self.view.addSubview(commentLabel)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool{
         commentTextField.resignFirstResponder()
         return true
+    }
+    
+    func makeCommentLabel() -> UILabel{
+        let label = UILabel()
+        label.text = commentTextField.text
+        label.frame.origin = CGPoint(x: 130, y: 200)
+        label.font = UIFont(name: "HiraginoSans-W6", size: 20)
+        label.sizeToFit()
+        return label
     }
     
 }
