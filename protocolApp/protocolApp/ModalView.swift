@@ -8,9 +8,14 @@
 
 import UIKit
 
+@objc protocol ModalViewDelegate{
+    func modalView(text: String)
+}
+
 class ModalView: UIView, UITextFieldDelegate {
     
     let textField = UITextField()
+    weak var customDelegate: ModalViewDelegate?
     
     required init(coder aDecoder: NSCoder){
         fatalError("init(coder:) has not been implemented.")
@@ -44,6 +49,7 @@ class ModalView: UIView, UITextFieldDelegate {
     }
     
     @objc func close(_ sender: UIButton){
+        customDelegate?.modalView(text: textField.text!)
         self.removeFromSuperview()
     }
 

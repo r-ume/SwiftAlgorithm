@@ -8,8 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, ModalViewDelegate {
     @IBOutlet weak var myLabel: UILabel!
     
     override func viewDidLoad() {
@@ -22,14 +21,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-   
+
     @IBAction func myButton(_ sender: UIButton) {
         self.showModal()
     }
     
     func showModal() {
         let modalView = ModalView(frame: self.view.bounds)
+        // 通知されるのはViewControllerなので、selfをつける
+        modalView.customDelegate = self
         self.view.addSubview(modalView)
+    }
+    
+    func modalView(text: String) {
+        self.myLabel.text = text
     }
 }
 
