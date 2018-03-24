@@ -104,22 +104,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @objc func tappedSubmitBtn(_ sender :AnyObject){
-        let name = self.textField.text!
-        let tweet = self.textView.text!
+        if (textField.text!.isEmpty) || (textView.text.isEmpty){
+            let alertController = UIAlertController(title: "Error", message: "'name' or 'text' is empty.", preferredStyle: UIAlertControllerStyle.alert)
+            let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+            alertController.addAction(action)
+            present(alertController, animated: true, completion: nil)
+        } else {
+            let name = self.textField.text!
+            let tweet = self.textView.text!
+            
+            print("名前:\(name)、ツイート内容:\(tweet)")
+            
+            var tweetDictionary: Dictionary<String, String> = [:]
+            tweetDictionary["name"] = textField.text!
+            tweetDictionary["text"] = textView.text
+            tweetDictionary["time"] = self.getCurrentTime()
+            tweetArray.insert(tweetDictionary, at: 0)
+            
+            self.backTweetView.removeFromSuperview()
+            textField.text = ""
+            textView.text = ""
+            
+            tableView.reloadData()
+        }
         
-        print("名前:\(name)、ツイート内容:\(tweet)")
-        
-        var tweetDictionary: Dictionary<String, String> = [:]
-        tweetDictionary["name"] = textField.text!
-        tweetDictionary["text"] = textView.text
-        tweetDictionary["time"] = self.getCurrentTime()
-        tweetArray.insert(tweetDictionary, at: 0)
-
-        self.backTweetView.removeFromSuperview()
-        textField.text = ""
-        textView.text = ""
-        
-        tableView.reloadData()
     }
     
     //-------------部品の生成のための処理--------------
