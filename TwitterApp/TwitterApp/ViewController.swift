@@ -227,6 +227,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return profileLabel
     }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView){
+        self.headerScrollView.backgroundColor = UIColor(red: 0, green: 0, blue: 0,
+                                                        alpha: self.headerScrollView.contentOffset.x * 0.6 / self.view.frame.width)
+        print("contentOffset: \(headerScrollView.contentOffset)")
+    }
+    
     func getCurrentTime() -> String {
         let now = Date()
         let dateFormatter = DateFormatter()
