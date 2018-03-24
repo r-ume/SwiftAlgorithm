@@ -16,6 +16,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var tweetArray: Array<Dictionary<String, String>> = []
 
+    @IBOutlet weak var headerScrollView: UIScrollView!
+    @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -26,6 +28,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.tableView.estimatedRowHeight = 78
         self.tableView.rowHeight = UITableViewAutomaticDimension
+        
+        headerScrollView.contentSize = CGSize(width: self.view.frame.width * 2, height: headerScrollView.frame.height)
+        self.setProfileImageView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -131,6 +136,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     //-------------部品の生成のための処理--------------
+    func setProfileImageView(){
+        self.profileImageView.layer.cornerRadius = 5
+        self.profileImageView.layer.borderWidth = 2
+        self.profileImageView.layer.borderColor = UIColor.white.cgColor
+    }
+    
     func makeBackTweetView() -> UIView{
         let backTweetView = UIView()
         backTweetView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)

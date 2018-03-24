@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Romutter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZK-uP-PZ0">
-                                        <rect key="frame" x="150" y="35" width="75.5" height="21"/>
+                                        <rect key="frame" x="150" y="35" width="76" height="21"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,7 +50,7 @@
                                     <constraint firstItem="yZK-uP-PZ0" firstAttribute="centerX" secondItem="Kxg-EU-pEM" secondAttribute="centerX" id="upf-Ew-D5D"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pug.png" translatesAutoresizingMaskIntoConstraints="NO" id="sNv-oU-8Bh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header.png" translatesAutoresizingMaskIntoConstraints="NO" id="sNv-oU-8Bh">
                                 <rect key="frame" x="0.0" y="64" width="375" height="190"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="190" id="4et-Gc-FX4"/>
@@ -118,6 +118,38 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYg-ii-bxS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="190"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLN-b6-x44">
+                                        <rect key="frame" x="139" y="130" width="97" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Jd0-Dt-efL"/>
+                                            <constraint firstAttribute="width" constant="97" id="RHj-zI-Orw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pug.png" translatesAutoresizingMaskIntoConstraints="NO" id="P5w-PK-3bx">
+                                        <rect key="frame" x="145" y="35" width="85" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="85" id="AEx-Xc-lqa"/>
+                                            <constraint firstAttribute="width" constant="85" id="uqG-Nb-0PW"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="CKQ-8g-D5e"/>
+                                    <constraint firstAttribute="bottom" secondItem="YLN-b6-x44" secondAttribute="bottom" constant="28" id="DA1-IS-jgV"/>
+                                    <constraint firstItem="YLN-b6-x44" firstAttribute="centerX" secondItem="DYg-ii-bxS" secondAttribute="centerX" id="EKy-JE-1xk"/>
+                                    <constraint firstItem="YLN-b6-x44" firstAttribute="top" secondItem="P5w-PK-3bx" secondAttribute="bottom" constant="10" id="FM6-Od-rS8"/>
+                                    <constraint firstAttribute="trailing" secondItem="YLN-b6-x44" secondAttribute="trailing" constant="139" id="K4Q-v7-2cA"/>
+                                    <constraint firstItem="P5w-PK-3bx" firstAttribute="centerX" secondItem="DYg-ii-bxS" secondAttribute="centerX" id="K5H-bq-swe"/>
+                                    <constraint firstItem="P5w-PK-3bx" firstAttribute="top" secondItem="DYg-ii-bxS" secondAttribute="top" constant="35" id="aec-N0-C1C"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="190" id="jxY-Nk-hW1"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -125,16 +157,21 @@
                             <constraint firstItem="72n-Rc-S7k" firstAttribute="top" secondItem="sNv-oU-8Bh" secondAttribute="bottom" constant="8" id="5p7-OX-aLJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="72n-Rc-S7k" secondAttribute="bottom" constant="8" id="Moc-29-241"/>
                             <constraint firstItem="Kxg-EU-pEM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P92-k7-o7R"/>
+                            <constraint firstItem="DYg-ii-bxS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Soi-ca-2S7"/>
                             <constraint firstItem="sNv-oU-8Bh" firstAttribute="top" secondItem="Kxg-EU-pEM" secondAttribute="bottom" id="Tdt-Wc-Qut"/>
                             <constraint firstItem="sNv-oU-8Bh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VDz-iN-UYV"/>
+                            <constraint firstItem="DYg-ii-bxS" firstAttribute="top" secondItem="Kxg-EU-pEM" secondAttribute="bottom" id="dG3-uu-mvq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="72n-Rc-S7k" secondAttribute="trailing" constant="16" id="eCA-Vv-uqK"/>
                             <constraint firstItem="72n-Rc-S7k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hqq-Xh-RK5"/>
                             <constraint firstItem="Kxg-EU-pEM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rhK-DA-fN1"/>
+                            <constraint firstItem="DYg-ii-bxS" firstAttribute="leading" secondItem="sNv-oU-8Bh" secondAttribute="leading" id="u4V-KN-8o4"/>
                             <constraint firstItem="Kxg-EU-pEM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uGS-fr-fN4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="headerScrollView" destination="DYg-ii-bxS" id="B3N-9N-kTB"/>
+                        <outlet property="profileImageView" destination="P5w-PK-3bx" id="WOa-U0-ABc"/>
                         <outlet property="tableView" destination="72n-Rc-S7k" id="fyl-Mv-fWp"/>
                     </connections>
                 </viewController>
@@ -144,6 +181,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="header.png" width="1552" height="962"/>
         <image name="pencil.png" width="32" height="32"/>
         <image name="pug.png" width="790" height="730"/>
     </resources>
