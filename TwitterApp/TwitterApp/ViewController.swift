@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
     
     var backTweetView: UIView!
     var textField: UITextField!
@@ -23,14 +23,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.headerScrollView.delegate = self
         
         self.tableView.estimatedRowHeight = 78
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
-        headerScrollView.contentSize = CGSize(width: self.view.frame.width * 2, height: headerScrollView.frame.height)
+        self.headerScrollView.contentSize = CGSize(width: self.view.frame.width * 2, height: headerScrollView.frame.height)
         self.setProfileImageView()
+
+        let profileLabel = self.makeProfileLabel()
+        self.headerScrollView.addSubview(profileLabel)
+        
+        self.headerScrollView.isPagingEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -207,6 +213,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         submitBtn.layer.cornerRadius = 7
         submitBtn.addTarget(self, action: #selector(self.tappedSubmitBtn(_:)), for:.touchUpInside)
         return submitBtn
+    }
+    
+    func makeProfileLabel() -> UILabel{
+        let profileLabel = UILabel()
+        profileLabel.frame.size = CGSize(width: 200, height: 200)
+        profileLabel.center.x = self.view.frame.width * 3 / 2
+        profileLabel.center.y = headerScrollView.center.y - 64
+        profileLabel.text = "Golang x Railsな人"
+        profileLabel.textColor = UIColor.white
+        profileLabel.textAlignment = NSTextAlignment.center
+        profileLabel.numberOfLines = 0
+        return profileLabel
     }
     
     func getCurrentTime() -> String {
