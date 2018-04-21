@@ -14,6 +14,7 @@
 		8F15F36A208B1DB7000F2286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F15F368208B1DB7000F2286 /* LaunchScreen.storyboard */; };
 		8F15F375208B1DB7000F2286 /* NavigationControllerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15F374208B1DB7000F2286 /* NavigationControllerAppTests.swift */; };
 		8F15F380208B1DB7000F2286 /* NavigationControllerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15F37F208B1DB7000F2286 /* NavigationControllerAppUITests.swift */; };
+		8F15F38E208B2063000F2286 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15F38D208B2063000F2286 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8F15F37B208B1DB7000F2286 /* NavigationControllerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationControllerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F15F37F208B1DB7000F2286 /* NavigationControllerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerAppUITests.swift; sourceTree = "<group>"; };
 		8F15F381208B1DB7000F2286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F15F38D208B2063000F2286 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				8F15F366208B1DB7000F2286 /* Assets.xcassets */,
 				8F15F368208B1DB7000F2286 /* LaunchScreen.storyboard */,
 				8F15F36B208B1DB7000F2286 /* Info.plist */,
+				8F15F38D208B2063000F2286 /* NextViewController.swift */,
 			);
 			path = NavigationControllerApp;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F15F362208B1DB7000F2286 /* ViewController.swift in Sources */,
+				8F15F38E208B2063000F2286 /* NextViewController.swift in Sources */,
 				8F15F360208B1DB7000F2286 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
