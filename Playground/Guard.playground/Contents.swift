@@ -6,13 +6,14 @@
  しかし、swiftでは、変数のチェックのための専用構文であるguard文が用意されている
  */
 
-func buyItem(myMoney :Int?){
-    
-    guard let money = myMoney else{
-        //処理終了
-        
+func guardPractice(){
+    let a: Any = 1
+    guard let int = a as? Int else {
+        print("a is not integer")
         return
     }
     
-    // 商品を購入する処理
+    print("value is \(int).")
 }
+
+guardPractice()
