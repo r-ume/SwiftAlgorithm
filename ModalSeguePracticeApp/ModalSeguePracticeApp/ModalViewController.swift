@@ -47,7 +47,7 @@ class ModalViewController: UIViewController {
     }
     
     @objc func didTouchButton(sender: UIButton){
-        self.dismiss(animated: true, completion: { () -> Void in {} )
+        self.dismiss(animated: true, completion: { () -> Void in } )
     }
 
 }
